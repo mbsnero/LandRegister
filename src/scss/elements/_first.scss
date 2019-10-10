@@ -1,0 +1,357 @@
+/* ===============   MAIN BLOCK    =============== */
+
+.main-block {
+  width: 75%;
+}
+
+/* ===============   MAIN TOP BLOCK    =============== */
+
+.main-top-block {
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  margin-bottom: 15px;
+}
+
+.main-title-block h1 {
+  font-family: Ekibastuz;
+  font-size: 42px;
+  text-align: center;
+}
+
+.top-btn-container {
+  margin-left: auto;
+  display: flex;
+}
+
+.btn-load {
+  margin-right: 10px;
+}
+
+/* ===============   MAIN FORM BLOCK    =============== */
+
+label {
+  position: relative;
+  top: 20px;
+  left: 5px;
+  width: 100%;
+  font-size: 10px;
+  text-align: left;
+  color: #4c4c4c;
+  font-family: Helvetica;
+  margin-bottom: 4px;
+}
+
+.l-n-l {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+  position: static;
+  font-size: 15px;
+  color: black;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  font-family: Helvetica;
+}
+
+.item-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+#form1 select {
+  width: 100%;
+}
+
+.item1 {
+  width: 20%;
+}
+
+#form2 input {
+  width: 25%;
+  outline:none;
+}
+
+.item2 {
+  width: 60%;
+}
+
+#form3 {
+  height: 100%;
+  justify-content: flex-start;
+  font-weight: normal;
+}
+
+#form3 label {
+  font-size: 18px;
+}
+
+#form3 input {
+  display: inline-block;
+}
+
+#check:checked {
+  border: 3px solid #6CA9D2 !important;
+  background-color: #6CA9D2;
+}
+
+#form3 label {
+  display: inline-flex;
+  width: 60%;
+  margin-left: 8px;
+}
+
+.item3 {
+  align-items: center;
+  width: 15%;
+}
+
+#form4 input {
+  width: 100%;
+  outline:none;
+}
+
+.item4 {
+  width: 20%;
+}
+
+.item5 {
+  width: 37.5%;
+  box-sizing: border-box;
+}
+
+#form5 input {
+  width: 50%;
+}
+
+.item6 {
+  width: 37.5%;
+  box-sizing: border-box;
+}
+
+#form6 select {
+  width: 100%;
+}
+
+/* ===============   BOT NUTTON BLOCK    =============== */
+
+.bot-button-block {
+  margin-top: 15px;
+  display: flex;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.accept-btn {
+  margin-right: 10px;
+}
+
+.paginator-block {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+
+
+/* ===============   ADAPTIVE    =============== */
+
+/*  
+  992 - планшеты
+  768 - телефоны ландшафт
+  576 - телефоны портрет
+*/
+
+/* Телефон вертикальный */
+
+
+/* Телефон Горизонтальный */
+@media all and (max-width: 768px) {
+  .table-block {
+    overflow-y: scroll;
+  }
+
+  .main-top-block {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-title-block h1 {
+    font-size: 32px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #form2 input {
+    width:50%;
+    margin-bottom: 10px;
+  }
+
+  .top-btn-container {
+    margin: 0;
+    justify-content: flex-start;
+  }
+
+  .main-container {
+    justify-content: space-between;
+  }
+
+  .aside-nav {
+    max-width: 25%;
+  }
+
+  .main-block {
+    width: 70%;
+  }
+
+  .form-item {
+    width: 100%;
+  }
+}
+
+/* Планшет */
+@media all and (max-width: 992px) {
+
+  .paginator-block {
+    min-width: 100%;
+    margin-left: 0;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pag-btn {
+    flex-grow: 1;
+  }
+
+  .table-block {
+    overflow-y: scroll;
+    width: 100%;
+  }
+
+  .main-top-block {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-title-block h1 {
+    font-size: 32px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #form2 input {
+    width:50%;
+    margin-bottom: 10px;
+  }
+
+  .top-btn-container {
+    margin: 0;
+    justify-content: flex-start;
+  }
+
+  .aside-nav {
+    width: 30%;
+  }
+
+  .main-block {
+    width: 65%;
+  }
+
+  .form-item {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 576px) {
+
+  .nav {
+    display: none;
+  }
+
+  .header-title-block p {
+    font-size: 20px;
+  }
+
+  .header-fio-block p {
+    font-size: 12px;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .aside-nav {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .main-block {
+    width: 100%;
+  }
+
+  .main-top-block {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-title-block h1 {
+    font-size: 24px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .top-btn-container {
+    margin: 0;
+    justify-content: flex-start;
+  }
+
+  .form-container {
+    flex-wrap: wrap;
+  }
+
+
+  .form-item {
+    width: 100%;
+  }
+
+  #form2 input {
+    width:100%;
+    margin-bottom: 10px;
+  }
+
+  .table-block {
+    overflow-y: scroll;
+  }
+}
+
+@media all and (max-width: 1300px) {
+  .table-block {
+    overflow-y: scroll;
+    width: 100%;
+  }
+}label {
+  position: relative;
+  top: 20px;
+  left: 5px;
+  width: 100%;
+  font-size: 10px;
+  text-align: left;
+  color: #4c4c4c;
+  font-family: Helvetica;
+  margin-bottom: 4px;
+}
