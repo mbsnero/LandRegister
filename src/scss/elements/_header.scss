@@ -1,5 +1,38 @@
 @import "../variables";
-.header {
-  font-size: 30px;
-  color: $blue;
+
+/* #2344a4
+  1e3685
+   */
+
+/* 123 */
+
+header {
+  background-color: #1e3685;
+  color: white;
+  font-family: 'Helvetica';
+}
+
+.container-header {
+  width: 90%;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.header-logo-block {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.header-title-block {
+  padding: 0 10px;
+  font-weight: 400;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.header-title-block:hover {
+  background-color: #2344a4;
 }

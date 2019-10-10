@@ -9,8 +9,15 @@
   <title>Госуслуги</title>
 </head>
 <body>
-    <header class='header'>
-      Header
+    <header>
+      <div class="container-header">
+        <div class="header-logo-block">
+          <img src="../../images/logo.jpg" alt="">
+        </div>
+        <div class="header-title-block">
+          <p>Сурский гектар</p>
+        </div>
+      </div>
     </header>
     {% block content %} {% endblock %}
     <footer class="footer">
