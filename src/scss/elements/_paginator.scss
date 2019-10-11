@@ -1,3 +1,5 @@
+@import "../variables";
+
 .pag-btn {
   height: 30px;
   width: 45px;
@@ -7,13 +9,13 @@
   background-color: white;
   font-weight: 300;
   font-size: 16px;
-  border: 1px solid #CDD1D4;
+  border: 1px solid $pagBorder;
   cursor: pointer;
   font-family: Helvetica;
 }
 
 .pag-btn:hover {
-  background-color: #F5F5F5;
+  background-color: $pagBackgroundHover;
 }
 
 .pag-btn:first-child {
@@ -27,14 +29,14 @@
 }
 
 .pag-btn:nth-child(5) {
-  background-color: #F5F5F5;
-  border: 1px solid #CDCFD1;
+  background-color: $pagBackgroundHidden;
+  border: 1px solid $pagBorderHidden;
 }
 
 .pag-btn:nth-child(1) {
-  background-color: #6CA9D2;
+  background-color: $pagBackgroundActive;
   color: white;
-  border: 1px solid #CDCFD1;
+  border: 1px solid $pagBorderActive;
 }
 
 .pag-btn p {

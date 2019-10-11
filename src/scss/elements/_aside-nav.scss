@@ -1,3 +1,5 @@
+@import "../variables";
+
 .aside-nav {
   width: 20%;
   
@@ -6,19 +8,19 @@
   flex-direction: column;
 }
 
-.aside-select-block {
+.aside-nav__select {
   border-bottom: 3px solid lightgray;
   padding-bottom: 20px;
 }
 
-.aside-select-block select {
+.aside-nav__select select {
   font-size: 15px;
   font-weight: 500;
   color: black;
   width: 100%;
 }
 
-.aside-link-item {
+.aside-nav__item {
   margin: 20px;
   margin-left: 0;
   display: flex;
@@ -26,7 +28,7 @@
   font-size: 16px;
 }
 
-.aside-img-block {
+.aside-nav__item-img {
   min-width: 40px;
   margin-right: 20px;
 }

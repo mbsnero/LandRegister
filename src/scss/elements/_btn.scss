@@ -1,5 +1,7 @@
+@import "../variables";
+
 .btn {
-  background-color: #0063b0;
+  background-color: $btn;
   color: white;
   border: none;
   font-size: 14px;
@@ -12,10 +14,10 @@
 }
 
 .btn:hover {
-  background: #023E83;
+  background: $btnHover;
 }
 
 .btn:active {
-  background: #002957;
+  background: $btnActive;
   border: none;
 }

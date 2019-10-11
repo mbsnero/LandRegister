@@ -1,13 +1,7 @@
 @import "../variables";
 
-/* #2344a4
-  1e3685
-   */
-
-/* 123 */
-
 header {
-  background-color: #1e3685;
+  background-color: $headerBackground;
   color: white;
   font-family: 'Helvetica';
 }
@@ -34,5 +28,5 @@ header {
 }
 
 .header-title-block:hover {
-  background-color: #2344a4;
+  background-color: $headerBackgroundHover;
 }

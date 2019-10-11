@@ -1,3 +1,5 @@
+@import "../variables";
+
 .table-block {
   font-size: 14px;
   font-family: Helvetica;
@@ -16,17 +18,7 @@ th {
   vertical-align: middle;
 }
 
-th:nth-child(5) {
-  width: 12%;  
-}
 
-th:nth-child(6) {
-  width: 8%;  
-}
-
-th:nth-child(7) {
-  width: 17%;  
-}
 
 td {
   border-bottom: 1px solid gray;
@@ -50,11 +42,11 @@ td {
 }
 
 .ti-1 {
-  background-color: #005FAF;
+  background-color: $tableBlue;
 }
 
 .ti-2 {
-  background-color: #FF1818;
+  background-color: $tableRed;
 }
 
 .ti-2 img {
@@ -65,7 +57,7 @@ td {
 }
 
 .ti-3 {
-  background-color: #35CD00;
+  background-color: table-green;
 }
 
 .marker-free {
