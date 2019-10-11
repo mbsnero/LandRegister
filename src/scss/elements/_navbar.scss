@@ -1,0 +1,40 @@
+@import "../variables";
+
+/* ===============   NAV BAR    =============== */
+
+.nav {
+  background-color: $navBackground;
+  font-weight: 700;
+  font-size: 15px;
+  color: $navFont;
+  font-family: 'Helvetica';
+}
+
+.nav__container {
+  width: 90%;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  padding: 0 px;
+  cursor: pointer;
+}
+
+.nav__crumb img {
+  height: 50px;
+}
+
+.nav__item {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.nav__item--active {
+  color: $navFontActive;
+}

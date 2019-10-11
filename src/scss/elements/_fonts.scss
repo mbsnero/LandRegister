@@ -1,0 +1,57 @@
+@import "../variables";
+
+/* Ekibastuz */
+
+@font-face {
+  font-family: 'Ekibastuz';
+  src: url("../fonts/ALS\ Ekibastuz\ Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal; }
+@font-face {
+  font-family: 'Ekibastuz';
+  src: url("../fonts/ALS\ Ekibastuz\ Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Ekibastuz';
+  src: url("../fonts/ALS\ Ekibastuz\ Heavy.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal; }
+@font-face {
+  font-family: 'Ekibastuz';
+  src: url("../fonts/ALS\ Ekibastuz\ Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Helvetica */
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url("../fonts/HelveticaBlack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal; }
+@font-face {
+  font-family: 'Helvetica';
+  src: url("../fonts/HelveticaBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Helvetica';
+  src: url("../fonts/HelveticaRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Helvetica';
+  src: url("../fonts/HelveticaLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Helvetica';
+  src: url("../fonts/HelveticaThin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
+  font-family: 'Helvetica';
+  src: url("../fonts/HelveticaMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }

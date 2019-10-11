@@ -1,5 +1,33 @@
 @import "../variables";
+
 .header {
-  font-size: 30px;
-  color: $blue;
+  background-color: $headerBackground;
+  color: white;
+  font-family: 'Helvetica';
+}
+
+.header__container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.header__title {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 15px;
+
+  &:hover, &:focus {
+    background-color: $headerBackgroundHover;
+  }
+}
+
+.header__link {
+  padding: 22px;
 }

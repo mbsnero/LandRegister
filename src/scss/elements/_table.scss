@@ -1,0 +1,85 @@
+@import "../variables";
+
+.table {
+  font-size: 14px;
+  font-family: Helvetica;
+  width: 100%;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  border-bottom: 4px solid gray;
+  padding: 20px 0;
+  text-align: left;
+  vertical-align: middle;
+}
+
+
+
+td {
+  border-bottom: 1px solid gray;
+  text-align: left;
+  vertical-align: middle;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+
+.table-img-container {
+  width: 18px;
+  height: 18px;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+.table-img-container img {
+  display: block;
+  width: 18px;
+}
+
+.ti-1 {
+  background-color: $tableBlue;
+}
+
+.ti-2 {
+  background-color: $tableRed;
+}
+
+.ti-2 img {
+  width: 15px;
+  margin-left: 2px;
+  position: relative;
+  top: 1px;
+}
+
+.ti-3 {
+  background-color: table-green;
+}
+
+.marker-free {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #37FF63;
+  border: 1px solid black;
+  position: absolute;
+  left: 5px;
+  top: 51px;
+}
+
+.marker-noactive {
+  background-color: #C4C4C4;
+}
+
+.marker-register {
+  background-color: red;
+}
+
+.marker-buying {
+  background-color: black;
+}
