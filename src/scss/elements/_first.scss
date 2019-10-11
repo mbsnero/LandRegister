@@ -41,7 +41,7 @@
   font-family: Helvetica;
 }
 
-.item-container {
+.item__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -125,7 +125,7 @@
 
 /* ===============   BOT NUTTON BLOCK    =============== */
 
-.bot-button-block {
+.bot-button {
   margin-top: 15px;
   display: flex;
   align-content: flex-end;
@@ -133,11 +133,11 @@
   margin-bottom: 10px;
 }
 
-.accept-btn {
+.btn--accept {
   margin-right: 10px;
 }
 
-.paginator-block {
+.paginator {
   margin-left: auto;
   display: flex;
   justify-content: flex-end;
@@ -217,7 +217,7 @@ th:nth-child(7) {
 /* Планшет */
 @media all and (max-width: 992px) {
 
-  .paginator-block {
+  .paginator {
     min-width: 100%;
     margin-left: 0;
     justify-content: center;
@@ -228,7 +228,7 @@ th:nth-child(7) {
     flex-grow: 1;
   }
 
-  .table-block {
+  .table {
     overflow-y: scroll;
     width: 100%;
   }
@@ -315,7 +315,7 @@ th:nth-child(7) {
     justify-content: flex-start;
   }
 
-  .form-container {
+  .form__container {
     flex-wrap: wrap;
   }
 
@@ -329,13 +329,13 @@ th:nth-child(7) {
     margin-bottom: 10px;
   }
 
-  .table-block {
+  .table {
     overflow-y: scroll;
   }
 }
 
 @media all and (max-width: 1300px) {
-  .table-block {
+  .table {
     overflow-y: scroll;
     width: 100%;
   }
