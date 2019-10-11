@@ -2,7 +2,7 @@
 
 .btn {
   background-color: $btn;
-  color: white;
+  color: $white;
   border: none;
   font-size: 14px;
   height: 42px;
@@ -11,13 +11,13 @@
   font-family: Helvetica;
   outline: none;
   cursor: pointer;
-}
 
-.btn:hover {
-  background: $btnHover;
-}
+  &:hover {
+    background: $btnHover;
+  }
 
-.btn:active {
-  background: $btnActive;
-  border: none;
+  &:active {
+    background: $btnActive;
+    border: none;
+  }
 }

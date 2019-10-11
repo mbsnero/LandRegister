@@ -6,13 +6,13 @@ input {
   height: 50px;
   background-color: white;
   outline:none;
-}
 
-input::placeholder {
-  color: black;
-}
-
-input:focus {
-  border: 4px solid $inputBorderFocus;
-  color: black;
+  &::placeholder {
+    color: $black;
+  }
+  
+  &:focus {
+    border: 4px solid $inputBorderFocus;
+    color: $black;
+  }
 }

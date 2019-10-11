@@ -1,12 +1,15 @@
 @import "../variables";
 
-/* ===============   MAIN BLOCK    =============== */
-
 .main-block {
   width: 75%;
 }
 
-/* ===============   MAIN TOP BLOCK    =============== */
+.main-container {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+}
 
 .main-block__top-block {
   display: flex;
@@ -30,7 +33,6 @@
   margin-right: 10px;
 }
 
-/* ===============   MAIN FORM BLOCK    =============== */
 
 .form-block__container {
   display: flex;
@@ -81,7 +83,7 @@
 }
 
 #check:checked {
-  border: 3px solid $checked !important;
+  border: 3px solid $checked;
   background-color: $checked;
 }
 
@@ -123,8 +125,6 @@
   width: 100%;
 }
 
-/* ===============   BOT NUTTON BLOCK    =============== */
-
 .bot-button {
   margin-top: 15px;
   display: flex;
@@ -157,20 +157,6 @@ th:nth-child(7) {
   width: 17%;  
 }
 
-
-
-/* ===============   ADAPTIVE    =============== */
-
-/*  
-  992 - планшеты
-  768 - телефоны ландшафт
-  576 - телефоны портрет
-*/
-
-/* Телефон вертикальный */
-
-
-/* Телефон Горизонтальный */
 @media all and (max-width: 768px) {
   .table-block {
     overflow-y: scroll;
@@ -214,8 +200,7 @@ th:nth-child(7) {
   }
 }
 
-/* Планшет */
-@media all and (max-width: 992px) {
+@media (max-width: 992px) {
 
   .paginator {
     min-width: 100%;
@@ -271,7 +256,7 @@ th:nth-child(7) {
   }
 }
 
-@media all and (max-width: 576px) {
+@media (max-width: 576px) {
 
   .nav {
     display: none;
@@ -334,7 +319,7 @@ th:nth-child(7) {
   }
 }
 
-@media all and (max-width: 1300px) {
+@media (max-width: 1300px) {
   .table {
     overflow-y: scroll;
     width: 100%;

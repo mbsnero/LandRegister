@@ -9,14 +9,14 @@
 }
 
 .aside-nav__select {
-  border-bottom: 3px solid lightgray;
+  border-bottom: 3px solid $lightGray;
   padding-bottom: 20px;
 }
 
 .aside-nav__select select {
   font-size: 15px;
   font-weight: 500;
-  color: black;
+  color: $black;
   width: 100%;
 }
 
