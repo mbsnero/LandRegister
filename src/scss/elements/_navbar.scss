@@ -2,7 +2,7 @@
 
 /* ===============   NAV BAR    =============== */
 
-.nav {
+.breadcrumbs {
   background-color: $navBackground;
   font-weight: 700;
   font-size: 15px;
@@ -10,31 +10,31 @@
   font-family: 'Helvetica';
 }
 
-.nav__container {
+.breadcrumbs__container {
   width: 90%;
   height: 50px;
   margin: 0 auto;
   display: flex;
 }
 
-.nav__logo {
+.breadcrumbs__logo {
   display: flex;
   align-items: center;
   padding: 0 px;
   cursor: pointer;
 }
 
-.nav__crumb img {
+.breadcrumbs__crumb img {
   height: 50px;
 }
 
-.nav__item {
+.breadcrumbs__item {
   display: flex;
   align-items: center;
   padding: 0 10px;
   cursor: pointer;
 }
 
-.nav__item--active {
+.breadcrumbs__item--active {
   color: $navFontActive;
 }
