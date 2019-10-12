@@ -18,7 +18,7 @@
   margin-bottom: 15px;
 }
 
-.main-block__top-title h1 {
+.main-block__top-title {
   font-family: Ekibastuz;
   font-size: 42px;
   text-align: center;
@@ -167,7 +167,7 @@ th:nth-child(7) {
     width: 100%;
   }
 
-  .main-block__top-title h1 {
+  .main-block__top-title {
     font-size: 32px;
     width: 100%;
     margin-bottom: 20px;
@@ -187,7 +187,7 @@ th:nth-child(7) {
     justify-content: space-between;
   }
 
-  .aside-nav {
+  .menu {
     min-width: 25%;
   }
 
@@ -243,7 +243,7 @@ th:nth-child(7) {
     justify-content: flex-start;
   }
 
-  .aside-nav {
+  .menu {
     min-width: 30%;
   }
 
@@ -258,16 +258,8 @@ th:nth-child(7) {
 
 @media (max-width: 576px) {
 
-  .nav {
+  .breadcrumbs {
     display: none;
-  }
-
-  .header-title-block p {
-    font-size: 20px;
-  }
-
-  .header-fio-block p {
-    font-size: 12px;
   }
 
   .main-container {
@@ -276,7 +268,7 @@ th:nth-child(7) {
     flex-direction: column;
   }
 
-  .aside-nav {
+  .menu {
     min-width: 100%;
   }
 
@@ -289,8 +281,8 @@ th:nth-child(7) {
     width: 100%;
   }
 
-  .main-title-block h1 {
-    font-size: 24px;
+  .main-title-block {
+    font-size: 20px;
     width: 100%;
     margin-bottom: 20px;
   }
@@ -309,7 +301,7 @@ th:nth-child(7) {
     width: 100%;
   }
 
-  #form2 input {
+  #form2 .input {
     width:100%;
     margin-bottom: 10px;
   }

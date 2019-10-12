@@ -1,50 +1,50 @@
 {% extends "src/njc/layout.njc" %}
 {% block content %}
-  <nav class="nav">
-    <div class="nav__container">
-      <div class="nav__logo">
+  <nav class="breadcrumbs">
+    <div class="breadcrumbs__container">
+      <div class="breadcrumbs__logo">
         <img src="images/home-icon.png" alt="">
       </div>
-      <div class="nav__item">
+      <div class="breadcrumbs__item">
         <p>Главная</p>
       </div>
-      <div class="nav__crumb">
+      <div class="breadcrumbs__crumb">
         <img src="images/crumbs.png" alt="">
       </div>
-      <div class="nav__item nav__item--active">
+      <div class="breadcrumbs__item breadcrumbs__item--active">
         <p>Реестр земельных участков</p>
       </div>
     </div>
   </nav>
 
   <section class="main-container">
-    <nav class="aside-nav">
-      <div class="aside-nav__select">
-        <select>
+    <nav class="menu">
+      <div class="menu__select-box">
+        <select class="menu__select select">
           <option>Профиль чиновника</option>
           <option>Второй пункт</option>
           <option>Третий пункт</option>
         </select>
       </div>
       
-      <div class="aside-nav__item">
-        <div class="aside-nav__item-img">
+      <div class="menu__item">
+        <div class="menu__item-img">
           <img src="images/Реестр земли.svg" alt="">
         </div>
         <div>
           <a href="#">Реестр земельных <br> участков</a>
         </div>
       </div>
-      <div class="aside-nav__item">
-        <div class="aside-nav__item-img">
+      <div class="menu__item">
+        <div class="menu__item-img">
           <img src="images/Процесс1.svg" alt="">
         </div>
         <div>
           <a href="#">Процесс</a>
         </div>
       </div>
-      <div class="aside-nav__item">
-        <div class="aside-nav__item-img">
+      <div class="menu__item">
+        <div class="menu__item-img">
           <img src="images/Отчёт.svg" alt="">
         </div>
         <div>
@@ -57,9 +57,9 @@
     <section class="main-block">
       <div class="top-block__container">
         <div class="main-block__top-block">
-          <div class="main-block__top-title">
-            <h1>Реестр земельных участков</h1>
-          </div>
+          <h1 class="main-block__top-title">
+            Реестр земельных участков
+          </h1>
           <div class="main-block__top-btn">
             <button class="btn btn--load">Загрузить файл</button>
             <button class="btn">Добавить</button>
@@ -73,7 +73,7 @@
           <div class="form__item item1">
             <div id="form1" class="item__container">
               <label for="">Статус</label>
-              <select>
+              <select class="select">
                 <option>Статус 1</option>
                 <option>Статус 2</option>
                 <option>Статус 3</option>
@@ -83,42 +83,42 @@
           <div class="form__item item2">
             <div id="form2" class="item__container">
               <label for="">Адрес</label>
-              <input type="text" placeholder="Район">
-              <input type="text" placeholder="Населённый пункт">
-              <input type="text" placeholder="Улица">
-              <input type="text" placeholder="Дом">
+              <input class="input" type="text" placeholder="Район">
+              <input class="input" type="text" placeholder="Населённый пункт">
+              <input class="input" type="text" placeholder="Улица">
+              <input class="input" type="text" placeholder="Дом">
             </div>
           </div>
           <div class="form__item item3">
             <div id="form3" class="item__container">
-              <input type="checkbox" name="" id="check">
+              <input type="checkbox">
               <label for="check" class="in-work-label">В работе</label>
             </div>
           </div>
           <div class="form__item item4">
             <div id="form4" class="item__container">
               <label for="">Кадастровый номер</label>
-              <input type="text">
+              <input class="input" type="text">
             </div>
           </div>
           <div class="form__item item5">
             <div id="form5" class="item__container">
               <label for="">Кадастровая стоимость</label>
-              <input type="text" placeholder="От">
-              <input type="text" placeholder="До">
+              <input class="input" type="text" placeholder="От">
+              <input class="input" type="text" placeholder="До">
             </div>
           </div>
           <div class="form__item item6">
             <div id="form5" class="item__container">
               <label for="">Площадь</label>
-              <input type="text" placeholder="От">
-              <input type="text" placeholder="До">
+              <input class="input" type="text" placeholder="От">
+              <input class="input" type="text" placeholder="До">
             </div>
           </div>
           <div class="form__item item1">
             <div id="form1" class="item__container">
               <label for="">Статус</label>
-              <select>
+              <select class="select">
                 <option>Статус 1</option>
                 <option>Статус 2</option>
                 <option>Статус 3</option>
@@ -128,7 +128,7 @@
           <div class="form__item item6">
             <div id="form6" class="item__container">
               <label for="">Разрешенное использование минэконом</label>
-              <select>
+              <select class="select">
                 <option>Статус 1</option>
                 <option>Статус 2</option>
                 <option>Статус 3</option>
@@ -138,7 +138,7 @@
           <div class="form__item item6">
             <div id="form6" class="item__container">
               <label for="">Разрешенное использование Росреестр</label>
-              <select>
+              <select class="select">
                 <option>Статус 1</option>
                 <option>Статус 2</option>
                 <option>Статус 3</option>
