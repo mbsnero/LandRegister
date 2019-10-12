@@ -1,0 +1,45 @@
+.card {
+
+  width: 75%;
+
+  .header-title {
+    font-family: Ekibastuz;
+    font-weight: 100;
+    margin: 0;
+    padding: 12px 0;
+    width: 100%;
+    font-size: 36px;
+  }
+  
+  .header-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+    .header-form__item {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .header-form__item--status {
+      width: 25%;
+    }
+
+    .header-form__item--number {
+      width: 25%;
+    }
+
+    .header-form__item--location {
+      width: 25%;
+    }
+
+    .header-form__item--adress {
+      width: 100%;
+      
+      .input {
+        width: 25%;
+      }
+    }
+    
+  }
+}

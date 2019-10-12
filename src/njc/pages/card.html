@@ -1,0 +1,99 @@
+{% extends "src/njc/layout.njc" %}
+{% block content %}
+
+<nav class="breadcrumbs">
+  <div class="breadcrumbs__container">
+    <div class="breadcrumbs__logo">
+      <img src="images/home-icon.png" alt="">
+    </div>
+    <div class="breadcrumbs__item">
+      <p>Главная</p>
+    </div>
+    <div class="breadcrumbs__crumb">
+      <img src="images/crumbs.png" alt="">
+    </div>
+    <div class="breadcrumbs__item">
+      <p>Реестр земельных участков</p>
+    </div>
+    <div class="breadcrumbs__crumb">
+      <img src="images/crumbs.png" alt="">
+    </div>
+    <div class="breadcrumbs__item breadcrumbs__item--active">
+      <p>Карточка земельного участка</p>
+    </div>
+  </div>
+</nav>
+
+<section class="main-container">
+  <nav class="menu">
+    <div class="menu__select-box">
+      <select class="menu__select select">
+        <option>Профиль чиновника</option>
+        <option>Второй пункт</option>
+        <option>Третий пункт</option>
+      </select>
+    </div>
+    
+    <div class="menu__item">
+      <div class="menu__item-img">
+        <img src="images/reestr.svg" alt="">
+      </div>
+      <div>
+        <a href="#">Реестр земельных <br> участков</a>
+      </div>
+    </div>
+    <div class="menu__item">
+      <div class="menu__item-img">
+        <img src="images/process.svg" alt="">
+      </div>
+      <div>
+        <a href="#">Процесс</a>
+      </div>
+    </div>
+    <div class="menu__item">
+      <div class="menu__item-img">
+        <img src="images/otchet.svg" alt="">
+      </div>
+      <div>
+        <a href="#">Отчётность</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="card">
+      <h1 class="header-title">Карточка Земельного участка</h1>
+      <form class="header-form">
+        <div class="header-form__item header-form__item--status">
+          <label class="label" for="">Статус</label>
+          <select class="select" class=""></select>
+        </div>
+        <div class="header-form__item header-form__item--number">
+          <label class="label" for="">Кадастровый номер</label>
+          <input class="input" type="text">
+        </div>
+        <div class="header-form__item header-form__item--location">
+          <label class="label" for="">Местоположение</label>
+          <input class="input" type="text">
+        </div>
+        <div class="header-form__item header-form__item--adress">
+          <label class="label">Адрес</label>
+          <input class="input" type="text" placeholder="Район">
+          <input class="input" type="text" placeholder="Населённый пункт">
+          <input class="input" type="text" placeholder="Улица">
+          <input class="input" type="text" placeholder="Дом">
+        </div>
+      </form>
+
+      <div class="tabs">
+        <div class="tab__item">
+          Основная информация
+        </div>
+        <div class="tab__item">
+          Процесс
+        </div>
+      </div>
+
+  </div>
+</section>
+
+{% endblock %}
