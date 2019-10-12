@@ -1,0 +1,23 @@
+@import "../variables";
+
+.btn {
+  background-color: $btn;
+  color: $white;
+  border: none;
+  font-size: 14px;
+  height: 42px;
+  padding: 0 20px;
+  border-radius: 4px;
+  font-family: Helvetica;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background: $btnHover;
+  }
+
+  &:active {
+    background: $btnActive;
+    border: none;
+  }
+}
