@@ -3,8 +3,8 @@
 .tabs {
 
   margin-top: 50px;
-  border-bottom: 1px solid #9F9F9F;
-  color: #0173C1;
+  border-bottom: 1px solid $tabsBorder;
+  color: $tabs;
 
   .tab__item {
     display: inline-block;
@@ -14,7 +14,7 @@
   }
 
   .tab__item--active {
-    border-bottom: 3px solid #6CA9D2;
-    color: #3E3E3E;
+    border-bottom: 3px solid $tabsBorderActive;
+    color: $tabsActive;
   }
 }
