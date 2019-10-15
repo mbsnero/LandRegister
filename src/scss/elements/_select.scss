@@ -5,22 +5,27 @@
   box-sizing: border-box;
   padding-left: 20px;
   background-color: $white;
-  background-image: url('/img/arrow-grey.png');
+  background-image: url('/images/arrow-grey.png');
   background-size: 16px;
   background-position: 95% 50%;
   background-repeat: no-repeat;
   border-radius: 0;
-  color: $black;
+  color: $darkGray;
   height: 50px;
   cursor: pointer;
-  /* -webkit-appearance: none;
+  -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none; */
+  appearance: none;
+  outline: none;
   font-family: Helvetica;
 
   &:focus {
+    color: $black;
     box-sizing: border-box;
     border: 4px solid $selectFocus;
-    border-radius: 4px;
+  }
+
+  option:first-child {
+    display: none;
   }
 }
