@@ -1,0 +1,20 @@
+@import "../variables";
+
+.tabs {
+
+  margin-top: 50px;
+  border-bottom: 1px solid #9F9F9F;
+  color: #0173C1;
+
+  .tab__item {
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+  }
+
+  .tab__item--active {
+    border-bottom: 3px solid #6CA9D2;
+    color: #3E3E3E;
+  }
+}
