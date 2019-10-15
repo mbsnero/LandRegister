@@ -178,6 +178,10 @@
 
 @media (max-width: 768px) {
 
+  .breadcrumbs {
+    display: none;
+  }
+
   .menu {
     max-width: 25%; 
   }
