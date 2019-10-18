@@ -1,6 +1,12 @@
 @import "../variables";
 
-.container {
-  font-size: 30px;
-  color: $green;
+.main-block {
+  width: 75%;
+}
+
+.main-container {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
 }

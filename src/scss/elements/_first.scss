@@ -1,16 +1,5 @@
 @import "../variables";
 
-.main-block {
-  width: 75%;
-}
-
-.main-container {
-  width: 90%;
-  margin: 30px auto;
-  display: flex;
-  justify-content: space-between;
-}
-
 .main-block__top-block {
   display: flex;
   align-items: center;
@@ -188,7 +177,7 @@ th:nth-child(7) {
   }
 
   .menu {
-    min-width: 25%;
+    width: 25%;
   }
 
   .main-block {

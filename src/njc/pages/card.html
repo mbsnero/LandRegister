@@ -1,0 +1,261 @@
+{% extends "src/njc/layout.njc" %}
+{% block content %}
+
+<nav class="breadcrumbs">
+  <div class="breadcrumbs__container">
+    <div class="breadcrumbs__logo">
+      <img src="images/home-icon.png" alt="">
+    </div>
+    <div class="breadcrumbs__item">
+      <p>Главная</p>
+    </div>
+    <div class="breadcrumbs__crumb">
+      <img src="images/crumbs.png" alt="">
+    </div>
+    <div class="breadcrumbs__item">
+      <p>Реестр земельных участков</p>
+    </div>
+    <div class="breadcrumbs__crumb">
+      <img src="images/crumbs.png" alt="">
+    </div>
+    <div class="breadcrumbs__item breadcrumbs__item--active">
+      <p>Карточка земельного участка</p>
+    </div>
+  </div>
+</nav>
+
+<section class="main-container">
+  <nav class="menu">
+    <div class="menu__select-box">
+      <select class="menu__select select">
+        <option>Выберете значение</option>
+        <option>Значение 1</option>
+        <option>Значение 2</option>
+      </select>
+    </div>
+    
+    <div class="menu__item">
+      <div class="menu__item-img">
+        <img src="images/reestr.svg" alt="">
+      </div>
+      <div>
+        <a href="#">Реестр земельных <br> участков</a>
+      </div>
+    </div>
+    <div class="menu__item">
+      <div class="menu__item-img">
+        <img src="images/process.svg" alt="">
+      </div>
+      <div>
+        <a href="#">Процесс</a>
+      </div>
+    </div>
+    <div class="menu__item">
+      <div class="menu__item-img">
+        <img src="images/otchet.svg" alt="">
+      </div>
+      <div>
+        <a href="#">Отчётность</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="card">
+      <h1 class="header-title">Карточка Земельного участка</h1>
+      <form class="header-form">
+        <div class="header-form__item">
+          <label class="label" for="">Статус</label>
+          <select class="select">
+            <option>Выберете значение</option>
+            <option>Значение 1</option>
+            <option>Значение 2</option>
+          </select>
+        </div>
+        <div class="header-form__item">
+          <label class="label" for="">Кадастровый номер</label>
+          <input class="input" type="text">
+        </div>
+        <div class="header-form__item header-form__item--long">
+          <label class="label" for="">Местоположение</label>
+          <input class="input" type="text">
+        </div>
+        <div class="header-form__item header-form__item--adress">
+          <label class="label">Адрес</label>
+          <input class="input" type="text" placeholder="Район">
+          <input class="input" type="text" placeholder="Населённый пункт">
+          <input class="input" type="text" placeholder="Улица">
+          <input class="input" type="text" placeholder="Дом">
+        </div>
+      </form>
+
+      <div class="tabs">
+        <div class="tab__item tab__item--active">
+          Основная информация
+        </div>
+        <div class="tab__item">
+          Процесс
+        </div>
+      </div>
+
+      <div class="title-block">
+        <p class="title-block__text">Карта</p>
+        <img class="title-block__btn" src="images/arr-top.png" alt="">
+      </div>
+      <div class="map">
+        <img class="map__img" src="images/map-img.png" alt="">
+      </div>
+
+      <div class="title-block">
+        <p class="title-block__text">Основная информация</p>
+        <img class="title-block__btn" src="images/arr-top.png" alt="">
+      </div>
+      <div class="main-info">
+        <div class="main-info__check">
+          <input type="checkbox" name="" id="checkbox1">
+          <label for="checkbox1">Для многодетных семей</label>
+        </div>
+        <div class="main-info__check">
+          <input type="checkbox" name="" id="checkbox2">
+          <label for="checkbox2">Требуется кадастровый учёт</label>
+        </div>
+        <div class="main-info__check">
+          <input type="checkbox" name="" id="checkbox3">
+          <label for="checkbox3">На территории земельного участка есть жилой дом?</label>
+        </div>
+        <div class="main-info__check">
+          <input type="checkbox" name="" id="checkbox4">
+          <label for="checkbox4">Аренда</label>
+        </div>
+        <div class="main-info__check">
+          <input type="checkbox" name="" id="checkbox5">
+          <label for="checkbox5">Продажа</label>
+        </div>
+        <div class="main-info__check">
+          <input type="checkbox" name="" id="checkbox6">
+          <label for="checkbox6">Постоянное (бессрочное пользование)</label>
+        </div>
+        <div class="main-info__check">
+          <input type="checkbox" name="" id="checkbox7">
+          <label for="checkbox7">Безвозмездное пользование</label>
+        </div>
+        <div class="main-info__item">
+          <label class="label" for="">Дата постановки на кадастровый учёт</label>
+          <input class="input" type="text">
+        </div>
+        <div class="main-info__item">
+          <label class="label" for="">Площадь</label>
+          <input class="input" type="text">
+        </div>
+        <div class="main-info__item">
+          <label class="label" for="">Наименование участка</label>
+          <select class="select" class=""></select>
+        </div>
+        <div class="main-info__item">
+          <label class="label" for="">Категория земель</label>
+          <select class="select" class="">
+            <option>Выберете значение</option>
+            <option>Значение 1</option>
+            <option>Значение 2</option>
+          </select>
+        </div>
+        <div class="main-info__item">
+          <label class="label" for="">Кадастровая стоимость</label>
+          <input class="input" type="text">
+        </div>
+        <div class="main-info__item">
+          <label class="label" for="">Первоначальный размер АП</label>
+          <input class="input" type="text">
+        </div>
+        <div class="main-info__item main-info__item--long">
+          <label class="label" for="">Первоначальный размер рыночной стоимости</label>
+          <input class="input" type="text">
+        </div>
+        <div class="main-info__item main-info__item--long">
+          <label class="label" for="">Вид разрешённого использования минэкономразвития</label>
+          <select class="select" class="">
+            <option>Выберете значение</option>
+            <option>Значение 1</option>
+            <option>Значение 2</option>
+          </select>
+        </div>
+        <div class="main-info__item main-info__item--long">
+          <label class="label" for="">Вид разрешенного использования Росреестр</label>
+          <select class="select" class="">
+            <option>Выберете значение</option>
+            <option>Значение 1</option>
+            <option>Значение 2</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="title-block">
+        <p class="title-block__text">Ограничения</p>
+        <img class="title-block__btn" src="images/arr-top.png" alt="">
+      </div>
+      <div class="limit">
+        <div class="limit__item">
+          <label class="label" for="">Вид ограничения</label>
+          <select class="select" class="">
+            <option>Выберете значение</option>
+            <option>Значение 1</option>
+            <option>Значение 2</option>
+          </select>
+        </div>
+        <div class="limit__item limit__item--long">
+          <label class="label" for="">Содержание</label>
+          <input class="input" type="text">
+        </div>
+        <div class="limit__item">
+          <label class="label" for="">Территориальная зона</label>
+          <input class="input" type="text">
+        </div>
+        <button class="btn">Добавить</button>
+      </div>
+
+      <div class="title-block">
+        <p class="title-block__text">Коммуникации</p>
+        <img class="title-block__btn" src="images/arr-top.png" alt="">
+      </div>
+      <div class="com">
+        <p>Расстояние</p>
+        <div class="com__row">
+          <div class="com__input">
+            <label class="label" for="">Водопровод</label>
+            <input class="input" type="text">
+          </div>
+          <div class="com__check">
+            <input type="checkbox" name="" id="com-check1">
+            <label for="com-check1">На земельном участке</label>
+          </div>
+        </div>
+        <div class="com__row">
+          <div class="com__input">
+            <label class="label" for="">Газопровод</label>
+            <input class="input" type="text">
+          </div>
+          <div class="com__check">
+            <input type="checkbox" name="" id="com-check2">
+            <label for="com-check2">На земельном участке</label>
+          </div>
+        </div>
+        <div class="com__row">
+          <div class="com__input">
+            <label class="label" for="">Линии электропередач</label>
+            <input class="input" type="text">
+          </div>
+          <div class="com__check">
+            <input type="checkbox" name="" id="com-check3">
+            <label for="com-check3">На земельном участке</label>
+          </div>
+        </div>
+        <label class="label">Описание</label>
+        <textarea class="textarea" id="" cols="30" rows="10"></textarea>
+        <button class="btn">Сохранить</button>
+        <button class="btn">Отмена</button>
+        <button class="btn">Снять с публикации</button>
+      </div>
+
+  </div>
+</section>
+
+{% endblock %}
