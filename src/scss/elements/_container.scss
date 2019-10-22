@@ -5,8 +5,10 @@
 }
 
 .main-container {
-  width: 90%;
-  margin: 30px auto;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   display: flex;
+  margin: 30px auto;
   justify-content: space-between;
 }
