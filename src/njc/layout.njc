@@ -11,12 +11,12 @@
 <body>
     <header class="header">
       <div class="header__container">
-        <div class="header__logo">
-          <img src="images/logo.jpg" alt="Герб России">
+        <a href="/" class="header__logo">
+          <img src="images/logo-penza.jpg" alt="Госуслуги">
+        </a>
+        <div class="header__user">
+          <a class="link header__link" href="/">Кандрашкина Т.С.</a>
         </div>
-        <h1 class="header__title">
-          <a class="link header__link" href="/">Сурский гектар</a>
-        </h1>
       </div>
     </header>
     {% block content %} {% endblock %}

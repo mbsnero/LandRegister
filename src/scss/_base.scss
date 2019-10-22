@@ -3,8 +3,13 @@ body {
   margin: 0;
   background: #fff;
   font-size: 14px;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: Roboto, sans-serif;
   color: #000;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 table {

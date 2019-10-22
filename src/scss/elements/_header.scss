@@ -1,12 +1,15 @@
 @import "../variables";
 
 .header {
-  background-color: $headerBackground;
-  color: $white;
+  background-color: $white;
   font-family: 'Helvetica';
+  box-shadow: 0 3px 2px rgba(0,0,0,.1);
 }
 
 .header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -17,20 +20,21 @@
 .header__logo {
   display: inline-block;
   vertical-align: middle;
+  width: 195px;
   margin-right: 10px;
 }
 
-.header__title {
+.header__user {
   display: inline-block;
   vertical-align: middle;
   font-size: 15px;
   margin: 0;
-
-  &:hover, &:focus {
-    background-color: $headerBackgroundHover;
-  }
 }
 
 .header__link {
-  padding: 22px;
+  color: $navFont;
+
+  &:hover, &:focus {
+    color: #3da8ff;
+  }
 }

@@ -6,6 +6,8 @@
   font-size: 15px;
   color: $navFont;
   font-family: 'Helvetica';
+  border-bottom: 1px solid $breadcrumbsGray;
+  margin-top: 2px;
 }
 
 .breadcrumbs__container {
