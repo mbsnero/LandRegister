@@ -1,0 +1,62 @@
+{% extends "src/njc/layout.njc" %}
+{% block content %}
+
+<nav class="breadcrumbs">
+  <div class="breadcrumbs__container">
+    <div class="breadcrumbs__logo">
+      <img src="images/home-icon.png" alt="">
+    </div>
+    <div class="breadcrumbs__item">
+      <p>Главная</p>
+    </div>
+    <div class="breadcrumbs__crumb">
+      <img src="images/crumbs.png" alt="">
+    </div>
+    <div class="breadcrumbs__item breadcrumbs__item--active">
+      <p>Процесс</p>
+    </div>
+  </div>
+</nav>
+
+<section class="main-container">
+  <nav class="menu">
+    <div class="menu__select-box">
+      <select class="menu__select select">
+        <option>Выберете значение</option>
+        <option>Значение 1</option>
+        <option>Значение 2</option>
+      </select>
+    </div>
+    
+    <div class="menu__item">
+      <div class="menu__item-img">
+        <img src="images/reestr.svg" alt="">
+      </div>
+      <div>
+        <a href="#">Реестр земельных <br> участков</a>
+      </div>
+    </div>
+    <div class="menu__item">
+      <div class="menu__item-img">
+        <img src="images/process.svg" alt="">
+      </div>
+      <div>
+        <a href="#">Процесс</a>
+      </div>
+    </div>
+    <div class="menu__item">
+      <div class="menu__item-img">
+        <img src="images/otchet.svg" alt="">
+      </div>
+      <div>
+        <a href="#">Отчётность</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="process">
+    <h1 class="header-title">Карточка Земельного участка</h1>
+  </div>
+</section>
+
+{% endblock %}
