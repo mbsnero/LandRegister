@@ -139,6 +139,14 @@
   margin-bottom: 10px;
 }
 
+.table__btn {
+  width: 20px;
+  
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 th:nth-child(5) {
   width: 12%;  
 }
@@ -149,6 +157,10 @@ th:nth-child(6) {
 
 th:nth-child(7) {
   width: 17%;  
+}
+
+th:nth-child(8) {
+  width: 5%;  
 }
 
 @media all and (max-width: 768px) {
