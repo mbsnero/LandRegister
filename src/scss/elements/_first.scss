@@ -14,10 +14,6 @@
   margin: 0;
 }
 
-.form__item {
-  height: 65px;
-}
-
 .main-block__top-btn {
   margin-left: auto;
   display: flex;
@@ -27,14 +23,11 @@
   margin-right: 10px;
 }
 
-
 .form-block__container {
   display: flex;
-  flex-direction: row;  
   justify-content: space-between;
-  align-content: center;
+  align-items: flex-end;
   flex-wrap: wrap;
-  font-family: Helvetica;
 }
 
 .item__container {
@@ -83,12 +76,12 @@
 
 #form3 label {
   display: inline-flex;
-  width: 60%;
+  width: 63%;
   margin-left: 8px;
 }
 
 .item3 {
-  align-items: center;
+  align-self: center;
   width: 15%;
 }
 

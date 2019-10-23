@@ -1,0 +1,65 @@
+@import "../variables";
+
+.toggle {
+  display: flex;
+  min-height: 15px;
+
+  &:hover,
+  &:focus {
+    .toggle__label:before {
+      border-color: $btn;
+    }
+  }
+}
+
+.toggle__input {
+  position: absolute;
+  left: -99999px;
+}
+
+.toggle__label {
+  display: block;
+  position: relative;
+  min-height: 15px;
+  cursor: pointer;
+  padding-left: 24px;
+  font-size: 14px;
+
+  &:before {
+    content: "";
+    width: 15px;
+    height: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.toggle--checkbox .toggle__label:before {
+  border-radius: 2px;
+}
+
+.toggle--checkbox .toggle__input:checked + .toggle__label:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  height: 3px;
+  width: 7px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  z-index: 2;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.toggle--checkbox .toggle__input:checked + .toggle__label:before {
+  background-color: $btn;
+  border-color: $btn;
+}
+
+.toggle__label:before {
+  border: 2px solid #2d9cdb;
+}

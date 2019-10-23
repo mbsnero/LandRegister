@@ -23,3 +23,18 @@
   font-size: 15px;
   color: $black;
 }
+
+.label-select {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.label-select__hint {
+  position: absolute;
+  z-index: 999;
+  top: 5px;
+  left: 5px;
+  font-size: 10px;
+  color: $label;
+}

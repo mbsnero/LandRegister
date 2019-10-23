@@ -20,10 +20,10 @@
   <section class="main-container">
     <nav class="menu">
       <div class="menu__select-box">
-        <select class="menu__select select">
-          <option>Выберете значение</option>
-          <option>Значение 1</option>
-          <option>Значение 2</option>
+        <select id="select_profile" class="menu__select select" name="state">
+          <option></option>
+          <option value="value_1">Профиль 1</option>
+          <option value="value_2">Профиль 2</option>
         </select>
       </div>
       
@@ -72,12 +72,14 @@
         <form class="form-block__container">
           <div class="form__item item1">
             <div id="form1" class="item__container">
-              <label class="label" for="">Статус</label>
-              <select class="select">
-                <option>Выберете значение</option>
-                <option>Значение 1</option>
-                <option>Значение 2</option>
-              </select>
+              <label class="label-select">
+                <span class="label-select__hint">Статус</span>
+                <select id="select_status" class="menu__select select" name="status">
+                  <option></option>
+                  <option value="status_1">Статус 1</option>
+                  <option value="status_2">Статус 2</option>
+                </select>
+              </label>
             </div>
           </div>
           <div class="form__item item2">
@@ -91,8 +93,12 @@
           </div>
           <div class="form__item item3">
             <div id="form3" class="item__container">
-              <input type="checkbox" id="check">
-              <label for="check" class="label--in-work">В работе</label>
+              {# <input type="checkbox" id="check">
+              <label for="check" class="label--in-work">В работе</label> #}
+              <label class="toggle toggle--checkbox">
+							  <input class="toggle__input" name="in-work" type="checkbox" checked="">
+							  <span class="toggle__label">В работе</span>
+						  </label>
             </div>
           </div>
           <div class="form__item item4">
@@ -117,32 +123,38 @@
           </div>
           <div class="form__item item1">
             <div id="form1" class="item__container">
-              <label class="label" for="">Категория земли</label>
-              <select class="select">
-                <option>Выберете значение</option>
-                <option>Значение 1</option>
-                <option>Значение 2</option>
-              </select>
+              <label class="label-select">
+                <span class="label-select__hint">Категория земли</span>
+                <select class="menu__select select" name="category">
+                  <option></option>
+                  <option value="category_1">Категория 1</option>
+                  <option value="category_2">Категория 2</option>
+                </select>
+              </label>
             </div>
           </div>
           <div class="form__item item6">
             <div id="form6" class="item__container">
-              <label class="label" for="">Разрешенное использование минэконом</label>
-              <select class="select">
-                <option>Выберете значение</option>
-                <option>Значение 1</option>
-                <option>Значение 2</option>
-              </select>
+              <label class="label-select">
+                <span class="label-select__hint">Разрешенное использование минэконом</span>
+                <select class="menu__select select" name="category">
+                  <option></option>
+                  <option value="mineconom_1">Разрешение 1</option>
+                  <option value="mineconom_2">Разрешение 2</option>
+                </select>
+              </label>
             </div>
           </div>
           <div class="form__item item6">
             <div id="form6" class="item__container">
-              <label class="label" for="">Разрешенное использование Росреестр</label>
-              <select class="select">
-                <option>Выберете значение</option>
-                <option>Значение 1</option>
-                <option>Значение 2</option>
-              </select>
+              <label class="label-select">
+                <span class="label-select__hint">Разрешенное использование Росреестр</span>
+                <select class="menu__select select" name="category">
+                  <option></option>
+                  <option value="rosereester_1">Разрешение 1</option>
+                  <option value="rosereester_2">Разрешение 2</option>
+                </select>
+              </label>
             </div>
           </div>
         </form>

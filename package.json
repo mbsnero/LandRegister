@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "browser-sync": "^2.26.7",
-    "gulp-uglify": "^3.0.2"
+    "gulp-uglify": "^3.0.2",
+    "select2": "^4.0.11"
   }
 }
