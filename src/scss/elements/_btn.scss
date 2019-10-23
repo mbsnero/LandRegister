@@ -21,3 +21,12 @@
     border: none;
   }
 }
+
+.btn--noactive {
+  background-color: $gray;
+  color: $black;
+
+  &:hover {
+    background: $darkGray;
+  }
+}
