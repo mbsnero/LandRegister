@@ -4,13 +4,20 @@
 
   .form {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 
+    .form__item {
+      
+    }
+
     .form__item--status {
+      padding-top: 20px;
       width: 20%;
     }
 
     .form__item--type {
+      padding-top: 20px;
       width: 37%;
     }
 
@@ -47,12 +54,8 @@
 @media (max-width: 992px) {
   .servises {
   
-  .form {
-    flex-wrap: wrap;
-
-    .form__item {
-      width: 100%;
-    }
+  .form__item {
+    min-width: 100%;
   }
 
   .btn-block {
@@ -67,22 +70,6 @@
       width: 100%;
     }
   }
-
-  }
-}
-
-@media (max-width: 768px) {
-  .servises {
-  
-
-
-  }
-}
-
-@media (max-width: 576px) {
-  .servises {
-  
-
 
   }
 }
