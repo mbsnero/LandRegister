@@ -23,7 +23,6 @@
     </div>
   </div>
 </nav>
-
 <section class="main-container">
   <nav class="menu">
     <div class="menu__select-box">
@@ -64,12 +63,14 @@
       <h1 class="header-title">Карточка Земельного участка</h1>
       <form class="header-form">
         <div class="header-form__item">
-          <label class="label" for="">Статус</label>
-          <select class="select">
-            <option>Выберете значение</option>
-            <option>Значение 1</option>
-            <option>Значение 2</option>
-          </select>
+          <label class="label-select">
+            <span class="label-select__hint">Статус</span>
+            <select id="select_status" class="menu__select select" name="status">
+              <option></option>
+              <option value="status_1">Статус 1</option>
+              <option value="status_2">Статус 2</option>
+            </select>
+          </label>
         </div>
         <div class="header-form__item">
           <label class="label" for="">Кадастровый номер</label>
@@ -87,17 +88,13 @@
           <input class="input" type="text" placeholder="Дом">
         </div>
       </form>
-
-      <div class="tabs">
-        <div class="tab__item tab__item--active">
-          Основная информация
-        </div>
-        <div class="tab__item">
-          Процесс
-        </div>
-      </div>
-
-      <div class="title-block">
+      <div id="tabs">
+        <ul class="tabs">
+          <li><a class="tabs__link" href="#fragment-1"><span>Основная информация</span></a></li>
+          <li><a class="tabs__link" href="#fragment-2"><span>Процесс</span></a></li>
+        </ul>
+        <div id="fragment-1">
+           <div class="title-block">
         <p class="title-block__text">Карта</p>
         <img class="title-block__btn" src="images/accordion_arr_up_hov.svg" alt="">
       </div>
@@ -111,32 +108,46 @@
       </div>
       <div class="main-info">
         <div class="main-info__check">
-          <input type="checkbox" name="" id="checkbox1">
-          <label for="checkbox1">Для многодетных семей</label>
+          <label class="toggle toggle--checkbox">
+						<input class="toggle__input" name="in-work" type="checkbox">
+						<span class="toggle__label">Для многодетных семей</span>
+					</label>
         </div>
         <div class="main-info__check">
-          <input type="checkbox" name="" id="checkbox2">
-          <label for="checkbox2">Требуется кадастровый учёт</label>
+          <label class="toggle toggle--checkbox">
+						<input class="toggle__input" name="in-work" type="checkbox">
+						<span class="toggle__label">Требуется кадастровый учёт</span>
+					</label>
         </div>
         <div class="main-info__check">
-          <input type="checkbox" name="" id="checkbox3">
-          <label for="checkbox3">На территории земельного участка есть жилой дом?</label>
+          <label class="toggle toggle--checkbox">
+						<input class="toggle__input" name="in-work" type="checkbox">
+						<span class="toggle__label">На территории земельного участка есть жилой дом?</span>
+					</label>
         </div>
         <div class="main-info__check">
-          <input type="checkbox" name="" id="checkbox4">
-          <label for="checkbox4">Аренда</label>
+          <label class="toggle toggle--checkbox">
+						<input class="toggle__input" name="in-work" type="checkbox">
+						<span class="toggle__label">Аренда</span>
+					</label>
         </div>
         <div class="main-info__check">
-          <input type="checkbox" name="" id="checkbox5">
-          <label for="checkbox5">Продажа</label>
+          <label class="toggle toggle--checkbox">
+						<input class="toggle__input" name="in-work" type="checkbox">
+						<span class="toggle__label">Продажа</span>
+					</label>
         </div>
         <div class="main-info__check">
-          <input type="checkbox" name="" id="checkbox6">
-          <label for="checkbox6">Постоянное (бессрочное пользование)</label>
+          <label class="toggle toggle--checkbox">
+						<input class="toggle__input" name="in-work" type="checkbox">
+						<span class="toggle__label">Постоянное (бессрочное пользование)</span>
+					</label>
         </div>
         <div class="main-info__check">
-          <input type="checkbox" name="" id="checkbox7">
-          <label for="checkbox7">Безвозмездное пользование</label>
+          <label class="toggle toggle--checkbox">
+						<input class="toggle__input" name="in-work" type="checkbox">
+						<span class="toggle__label">Безвозмездное пользование</span>
+					</label>
         </div>
         <div class="main-info__item">
           <label class="label" for="">Дата постановки на кадастровый учёт</label>
@@ -147,16 +158,24 @@
           <input class="input" type="text">
         </div>
         <div class="main-info__item">
-          <label class="label" for="">Наименование участка</label>
-          <select class="select" class=""></select>
+          <label class="label-select">
+            <span class="label-select__hint">Наименование участка</span>
+            <select class="menu__select select" name="places">
+              <option></option>
+              <option value="place_1">Участок 1</option>
+              <option value="place_2">Участок 2</option>
+            </select>
+          </label>
         </div>
         <div class="main-info__item">
-          <label class="label" for="">Категория земель</label>
-          <select class="select" class="">
-            <option>Выберете значение</option>
-            <option>Значение 1</option>
-            <option>Значение 2</option>
-          </select>
+          <label class="label-select">
+            <span class="label-select__hint">Категория земель</span>
+            <select class="menu__select select" name="place">
+              <option></option>
+              <option value="place_1">Участок 1</option>
+              <option value="place_2">Участок 2</option>
+            </select>
+          </label>
         </div>
         <div class="main-info__item">
           <label class="label" for="">Кадастровая стоимость</label>
@@ -171,20 +190,24 @@
           <input class="input" type="text">
         </div>
         <div class="main-info__item main-info__item--long">
-          <label class="label" for="">Вид разрешённого использования минэкономразвития</label>
-          <select class="select" class="">
-            <option>Выберете значение</option>
-            <option>Значение 1</option>
-            <option>Значение 2</option>
-          </select>
+          <label class="label-select">
+            <span class="label-select__hint">Вид разрешённого использования минэкономразвития</span>
+            <select class="menu__select select" name="place">
+              <option></option>
+              <option value="place_1">Участок 1</option>
+              <option value="place_2">Участок 2</option>
+            </select>
+          </label>
         </div>
         <div class="main-info__item main-info__item--long">
-          <label class="label" for="">Вид разрешенного использования Росреестр</label>
-          <select class="select" class="">
-            <option>Выберете значение</option>
-            <option>Значение 1</option>
-            <option>Значение 2</option>
-          </select>
+          <label class="label-select">
+            <span class="label-select__hint">Вид разрешенного использования Росреестр</span>
+            <select class="menu__select select" name="place">
+              <option></option>
+              <option value="place_1">Участок 1</option>
+              <option value="place_2">Участок 2</option>
+            </select>
+          </label>
         </div>
       </div>
 
@@ -194,12 +217,14 @@
       </div>
       <div class="limit">
         <div class="limit__item">
-          <label class="label" for="">Вид ограничения</label>
-          <select class="select" class="">
-            <option>Выберете значение</option>
-            <option>Значение 1</option>
-            <option>Значение 2</option>
-          </select>
+          <label class="label-select">
+            <span class="label-select__hint">Вид ограничения</span>
+            <select class="menu__select select" name="place">
+              <option></option>
+              <option value="place_1">Участок 1</option>
+              <option value="place_2">Участок 2</option>
+            </select>
+          </label>
         </div>
         <div class="limit__item limit__item--long">
           <label class="label" for="">Содержание</label>
@@ -224,8 +249,10 @@
             <input class="input" type="text">
           </div>
           <div class="com__check">
-            <input type="checkbox" name="" id="com-check1">
-            <label for="com-check1">На земельном участке</label>
+            <label class="toggle toggle--checkbox">
+              <input class="toggle__input" name="in-work" type="checkbox">
+              <span class="toggle__label">На земельном участке</span>
+					  </label>
           </div>
         </div>
         <div class="com__row">
@@ -234,8 +261,10 @@
             <input class="input" type="text">
           </div>
           <div class="com__check">
-            <input type="checkbox" name="" id="com-check2">
-            <label for="com-check2">На земельном участке</label>
+            <label class="toggle toggle--checkbox">
+              <input class="toggle__input" name="in-work" type="checkbox">
+              <span class="toggle__label">На земельном участке</span>
+					  </label>
           </div>
         </div>
         <div class="com__row">
@@ -244,8 +273,10 @@
             <input class="input" type="text">
           </div>
           <div class="com__check">
-            <input type="checkbox" name="" id="com-check3">
-            <label for="com-check3">На земельном участке</label>
+            <label class="toggle toggle--checkbox">
+              <input class="toggle__input" name="in-work" type="checkbox">
+              <span class="toggle__label">На земельном участке</span>
+					  </label>
           </div>
         </div>
         <label class="label">Описание</label>
@@ -255,6 +286,13 @@
         <button class="btn btn--noactive">Снять с публикации</button>
         <button class="btn">Опубликовать</button>
       </div>
+        </div>
+        <div id="fragment-2">
+          <img src="images/mock_img.png">
+        </div>
+      </div>
+
+     
 
   </div>
 </section>

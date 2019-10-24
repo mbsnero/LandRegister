@@ -15,6 +15,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-end;
     width: 100%;
 
     .header-form__item {
@@ -48,6 +49,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-end;
     font-size: 14px;
 
     .main-info__check {
@@ -70,7 +72,7 @@
     .main-info__item {
       width: 23%;  
       padding: 0;
-      margin: 0;
+      margin-top: 15px;
     }
 
     .main-info__item--long {
@@ -82,6 +84,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-end;
 
     .limit__item {
       width: 23%;
