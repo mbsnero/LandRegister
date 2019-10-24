@@ -1,0 +1,120 @@
+{% extends "src/njc/layout.njc" %}
+{% block content %}
+<nav class="breadcrumbs">
+  <div class="breadcrumbs__container">
+    <div class="breadcrumbs__logo">
+      <img src="images/home-icon.png" alt="">
+    </div>
+    <div class="breadcrumbs__item">
+      <p>Главная</p>
+    </div>
+    <div class="breadcrumbs__crumb">
+      <img src="images/crumbs.png" alt="">
+    </div>
+    <div class="breadcrumbs__item breadcrumbs__item--active">
+      <p>Реестр Услуг</p>
+    </div>
+  </div>
+</nav>
+
+<section class="main-container">
+  <nav class="menu">
+    <div class="menu__select-box">
+      <select class="menu__select select">
+        <option>Профиль для бизнеса</option>
+        <option>Значение 1</option>
+        <option>Значение 2</option>
+      </select>
+    </div>
+    
+    <div class="menu__item">
+      <div class="menu__item-img">
+        <img src="images/main-info-icon.svg" alt="">
+      </div>
+      <div>
+        <a href="#">Основная информация</a>
+      </div>
+    </div>
+    <div class="menu__item">
+      <div class="menu__item-img">
+        <img src="images/servises-reestr-icon.svg" alt="">
+      </div>
+      <div>
+        <a href="#">Реестр услуг</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main-block servises">
+    <div class="page-title page-title--btn">
+      <h1 class="title-text">
+        Реестр услуг
+      </h1>
+      <div class="title-btn">
+        <button class="btn">Добавить</button>
+      </div>
+    </div>
+
+    <div class="form">
+      <div class="form__item form__item--status">
+        <label class="label" for="">Статус</label>
+        <select class="select">
+          <option>Выберете значение</option>
+          <option>Значение 1</option>
+          <option>Значение 2</option>
+        </select>
+      </div>
+      <div class="form__item form__item--type">
+        <label class="label" for="">Вид услуги</label>
+        <select class="select">
+          <option>Выберете значение</option>
+          <option>Значение 1</option>
+          <option>Значение 2</option>
+        </select>
+      </div>
+      <div class="form__item form__item--price">
+        <label class="label">Стоимость</label>
+        <input class="input" type="text" placeholder="От">
+        <input class="input" type="text" placeholder="До">
+      </div>
+    </div>
+
+    <div class="btn-block">
+      <div class="left-block">
+        <button class="btn">Принять</button>
+        <button class="btn">Сбросить</button>
+      </div>
+      <div class="paginator">
+        <div class="paginator__item paginator__item--active">
+          <p>1</p>
+        </div>
+        <div class="paginator__item">
+          <p>2</p>
+        </div>
+        <div class="paginator__item">
+          <p>3</p>
+        </div>
+        <div class="paginator__item">
+          <p>4</p>
+        </div>
+        <div class="paginator__item paginator__item--hidden">
+          <p>...</p>
+        </div>
+        <div class="paginator__item">
+          <p>10</p>
+        </div>
+        <div class="paginator__item">
+          <p>11</p>
+        </div>
+        <div class="paginator__item">
+          <p>12</p>
+        </div>
+      </div>
+    </div>
+
+    <img class="table-img" src="images/table-img.png" alt="">
+    
+    
+  </div>
+</section>
+{% endblock %}
