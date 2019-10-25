@@ -1,5 +1,4 @@
 .card {
-
   width: 75%;
 
   .header-form {
@@ -10,8 +9,8 @@
     width: 100%;
 
     .header-form__item {
-      display: flex;
-      flex-wrap: wrap;
+      position: relative;
+      margin-top: 15px;
       width: 23%;
     }
 
@@ -20,8 +19,9 @@
     }
 
     .header-form__item--adress {
+      display: flex;
+      flex-wrap: wrap;
       width: 100%;
-      margin: 0;
 
       .input {
         width: 25%;
@@ -50,10 +50,6 @@
       box-sizing: border-box;
       height: 50px;
       padding: 0 10px;
-
-      label {
-        margin-left: 5px;
-      }
     }
 
     .main-info__check:nth-child(3) {
@@ -61,6 +57,7 @@
     }
 
     .main-info__item {
+      position: relative;
       width: 23%;  
       padding: 0;
       margin-top: 15px;
@@ -78,7 +75,9 @@
     align-items: flex-end;
 
     .limit__item {
+      position: relative;
       width: 23%;
+      margin-top: 15px;
     }
 
     .limit__item--long {
@@ -86,7 +85,7 @@
     }
 
     .btn {
-      margin-top: 20px;
+      margin-top: 15px;
     }
   }
 
@@ -94,28 +93,29 @@
     .com__row {
       display: flex;
       align-items: center;
+      margin-top: 15px;
       
       .com__input {
-        width: 45%;
+        width: 50%;
+        position: relative;
+      }
+
+      .com__textarea {
+        position: relative;
+        width: 100%;
       }
 
       .com__check {
-        display: flex;
-        align-items: center;
-        height: 20px;
-        position: relative;
-        top: 10px;
         margin-left: 20px;
-
-        input {
-          margin-right: 10px;
-        }
       }
     }
   }
 
-  .label {
-    top: 17px;
+  .bot-btn {
+    .btn {
+      margin-right: 15px;
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -125,10 +125,9 @@
   }
 
   .card {
-    max-width: 65%;
 
     .header-form__item {
-      min-width: 48.5%;
+      min-width: 100%;
     }
 
     .header-form__item--adress {
@@ -144,27 +143,13 @@
     .main-info__item {
       min-width: 48.5%;
     }
-
-    .limit {
-      justify-content: flex-start;
       
-      .limit__item {
-        min-width: 50%;
-      }
-
-      .btn {
-        margin-left: 20px;
-      }
+    .limit__item {
+      min-width: 100%;
     }
 
     .com__input {
       min-width: 60%;
-    }
-
-    .com__check {
-      input {
-        margin-right: 10px;
-      }
     }
   }
 }
@@ -208,17 +193,11 @@
     .com__input {
       min-width: 60%;
     }
-
-    .com__check {
-      input {
-        margin-right: 10px;
-      }
-    }
   }
-}
 
-@media (max-width: 576px) {
-  .card {
-    min-width: 100%;
+  .bot-btn {
+    .btn {
+      width: 100%;
+    }
   }
 }

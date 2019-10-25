@@ -1,0 +1,147 @@
+{% extends "src/njc/layout.njc" %}
+{% block content %}
+
+<nav class="breadcrumbs">
+  <div class="breadcrumbs__container">
+    <div class="breadcrumbs__logo">
+      <img src="images/home-icon.png" alt="">
+    </div>
+    <div class="breadcrumbs__item">
+      <p>Главная</p>
+    </div>
+    <div class="breadcrumbs__crumb">
+      <img src="images/crumbs.png" alt="">
+    </div>
+    <div class="breadcrumbs__item breadcrumbs__item--active">
+      <p>Реестр Услуг</p>
+    </div>
+  </div>
+</nav>
+
+<section class="main-container">
+  <nav class="menu">
+    <div class="menu__select-box">
+      <label class="label-select">
+        <span class="label-select__hint"></span>
+        <select class="menu__select select" name="places">
+          <option>Профиль для бизнеса</option>
+          <option value="place_1">Значение 1</option>
+          <option value="place_2">Значение 2</option>
+        </select>
+      </label>
+    </div>
+    
+    <div class="menu__item">
+      <div class="menu__item-img">
+        <img src="images/main-info-icon.svg" alt="">
+      </div>
+      <div>
+        <a href="#">В работе</a>
+      </div>
+    </div>
+    <div class="menu__item">
+      <div class="menu__item-img">
+        <img src="images/servises-reestr-icon.svg" alt="">
+      </div>
+      <div>
+        <a href="#">Избранные земельные участки</a>
+      </div>
+    </div>
+    <div class="menu__item">
+      <div class="menu__item-img">
+        <img src="images/servises-reestr-icon.svg" alt="">
+      </div>
+      <div>
+        <a href="#">История</a>
+      </div>
+    </div>
+    <div class="menu__item">
+      <div class="menu__item-img">
+        <img src="images/servises-reestr-icon.svg" alt="">
+      </div>
+      <div>
+        <a href="#">Критерии поиска</a>
+      </div>
+    </div>
+    <div class="menu__item">
+      <div class="menu__item-img">
+        <img src="images/servises-reestr-icon.svg" alt="">
+      </div>
+      <div>
+        <a href="#">Избранные сопутствующие услуги</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main-block services-1">
+    <div class="page-title">
+      <h1 class="title-text">
+        Реестр услуг
+      </h1>
+    </div>
+
+    <div class="form">
+      <div class="form__item">
+        <label class="label">Стоимость</label>
+        <input class="input" type="text" placeholder="От">
+      </div>
+      <div class="form__item">
+        <label class="toggle toggle--checkbox">
+          <input class="toggle__input" name="in-work" type="checkbox">
+          <span class="toggle__label">Для многодетных семей</span>
+        </label>
+      </div>
+      <div class="form__item">
+        <label class="label-select">
+          <span class="label-select__hint">Наименование участка</span>
+          <select class="menu__select select" name="places">
+            <option></option>
+            <option value="place_1">Участок 1</option>
+            <option value="place_2">Участок 2</option>
+          </select>
+        </label>
+      </div>
+      <div class="form__item form__item--double">
+        <label class="label">Стоимость</label>
+        <input class="input" type="text" placeholder="От">
+        <input class="input" type="text" placeholder="До">
+      </div>
+    </div>
+    <div class="btn-block">
+        <div class="left-block">
+          <button class="btn">Принять</button>
+          <button class="btn">Сбросить</button>
+        </div>
+        <div class="paginator">
+          <div class="paginator__item paginator__item--active">
+            <p>1</p>
+          </div>
+          <div class="paginator__item">
+            <p>2</p>
+          </div>
+          <div class="paginator__item">
+            <p>3</p>
+          </div>
+          <div class="paginator__item">
+            <p>4</p>
+          </div>
+          <div class="paginator__item paginator__item--hidden">
+            <p>...</p>
+          </div>
+          <div class="paginator__item">
+            <p>10</p>
+          </div>
+          <div class="paginator__item">
+            <p>11</p>
+          </div>
+          <div class="paginator__item">
+            <p>12</p>
+          </div>
+        </div>
+      </div>
+  
+      <img class="table-img" src="images/table-img.png" alt="">
+  </div>
+</section>
+
+{% endblock %}

@@ -22,10 +22,39 @@
     width: 100%;
   }
 
+  .menu {
+    max-width: 25%;
+  }
+
+  .main-block {
+    max-width: 70%;
+  }
+
+}
+
+@media (max-width: 768px) {
+
 }
 
 @media (max-width: 576px) {
+
+  .breadcrumbs {
+    display: none;
+  }
+
   .main-block {
     padding-left: 0;
+    min-width: 100%;
+    
+  }
+
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .menu {
+    min-width: 100%;
   }
 }
