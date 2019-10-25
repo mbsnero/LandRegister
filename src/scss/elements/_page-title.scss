@@ -18,7 +18,9 @@
   align-items: center;
 
   .title-btn {
+    display: flex;
     .btn {
+      display: inline-block;
       margin-left: 20px;
     }
   }

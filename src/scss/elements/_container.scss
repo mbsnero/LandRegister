@@ -32,6 +32,16 @@
 
 }
 
+@media (max-width: 992px) {
+  .menu {
+    min-width: 30%;
+  }
+
+  .main-block {
+    width: 65%;
+  }
+}
+
 @media (max-width: 768px) {
 
 }

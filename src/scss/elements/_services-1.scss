@@ -26,7 +26,6 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-
   }
 
   .table-img {
@@ -44,21 +43,14 @@
     .left-block {
       width: 100%;
       margin-bottom: 20px;
+
+      .btn {
+        width: 49%;
+      }
     }
 
     .paginator {
       width: 100%;
-    }
-  }
-}
-
-@media (max-width: 768px) {
-
-  .services-1 {
-    .left-block {
-      .btn {
-        width: 49%;
-      }
     }
   }
 }
