@@ -29,7 +29,7 @@
 
 .ui-tabs-active {
   padding-bottom: 5px;
-  border-bottom: 3px solid $tabsBorderActive;
+  border-bottom: 3px solid $btn;
   color: $tabsActive;
 
   &:hover {
@@ -38,6 +38,7 @@
 }
 
 .tabs__link {
+  font-weight: 700;
   text-decoration: none;
   color: inherit;
 
