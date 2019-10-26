@@ -1,0 +1,56 @@
+@import "../variables";
+
+.services-1 {
+
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .form__item {
+      position: relative;
+      margin: auto 0;
+      margin-top: 15px;
+      width: 48%;
+    }
+
+    .form__item--double {
+      display: flex;
+    }
+  }
+
+  .btn-block {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .table-img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .services-1 {
+  
+    .form__item {
+      min-width: 100%;
+    }
+
+    .left-block {
+      width: 100%;
+      margin-bottom: 20px;
+
+      .btn {
+        width: 49%;
+      }
+    }
+
+    .paginator {
+      width: 100%;
+    }
+  }
+}

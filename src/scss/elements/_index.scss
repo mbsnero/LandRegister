@@ -1,0 +1,155 @@
+@import "../variables";
+
+.form-block__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.item__container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#form1 .select {
+  width: 100%;
+}
+
+.item1 {
+  width: 20%;
+}
+
+#form2 .input {
+  width: 25%;
+}
+
+.item2 {
+  width: 60%;
+}
+
+.item3 {
+  align-self: center;
+  width: 15%;
+}
+
+.item4 {
+  width: 20%;
+}
+
+.item5 {
+  width: 37.5%;
+}
+
+#form5 .input {
+  width: 50%;
+}
+
+.item6 {
+  width: 37.5%;
+}
+
+.btn-block {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.table__btn {
+  width: 20px;
+  
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+th:nth-child(5) {
+  width: 12%;  
+}
+
+th:nth-child(6) {
+  width: 8%;  
+}
+
+th:nth-child(7) {
+  width: 17%;  
+}
+
+th:nth-child(8) {
+  width: 5%;  
+}
+
+@media (max-width: 992px) {
+
+  .left-block {
+    width: 100%;
+    margin-bottom: 20px;
+    
+    .btn {
+      width: 49%;
+    }
+  }
+
+  .paginator {
+    width: 100%;
+  }
+
+  .table {
+    overflow-y: scroll;
+    width: 100%;
+  }
+
+  .main-block__top-block {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-title-block h1 {
+    font-size: 32px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #form2 .input {
+    width:50%;
+    margin-bottom: 10px;
+  }
+
+  .form__item {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 768px) {
+
+  #form2 .input {
+    width:50%;
+    margin-bottom: 10px;
+  }
+
+  .form__item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .form__container {
+    flex-wrap: wrap;
+  }
+
+  .form__item {
+    width: 100%;
+  }
+
+  #form2 .input {
+    width:100%;
+    margin-bottom: 15px;
+  }
+}

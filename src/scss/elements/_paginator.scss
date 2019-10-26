@@ -1,5 +1,12 @@
 @import "../variables";
 
+.paginator {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0px;
+}
+
 .paginator__item {
   height: 30px;
   width: 45px;
