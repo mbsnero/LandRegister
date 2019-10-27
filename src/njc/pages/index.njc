@@ -1,72 +1,30 @@
+{# Переменные #}
+{% set title = "Госуслуги" %}
+{% set navItems = [
+  {
+    "title"  : "Реестр земельных участков",
+    "url" : "/",
+    "active": true
+  }
+]
+%}
+{# Наследование шаблона #}
 {% extends "src/njc/layout.njc" %}
+
+{# Вставляем контент шаблонов #}
 {% block content %}
-  <nav class="breadcrumbs">
-    <div class="breadcrumbs__container">
-      <div class="breadcrumbs__logo">
-        <img src="images/home-icon.png" alt="">
-      </div>
-      <div class="breadcrumbs__item">
-        <p>Главная</p>
-      </div>
-      <div class="breadcrumbs__crumb">
-        <img src="images/crumbs.png" alt="">
-      </div>
-      <div class="breadcrumbs__item breadcrumbs__item--active">
-        <p>Реестр земельных участков</p>
-      </div>
-    </div>
-  </nav>
-
   <section class="main-container">
-    <nav class="menu">
-      <div class="menu__select-box">
-        <select id="select_profile" class="menu__select select" name="state">
-          <option></option>
-          <option value="value_1">Профиль 1</option>
-          <option value="value_2">Профиль 2</option>
-        </select>
-      </div>
-      
-      <div class="menu__item">
-        <div class="menu__item-img">
-          <img src="images/reestr.svg" alt="">
-        </div>
-        <div>
-          <a href="#">Реестр земельных <br> участков</a>
-        </div>
-      </div>
-      <div class="menu__item">
-        <div class="menu__item-img">
-          <img src="images/process.svg" alt="">
-        </div>
-        <div>
-          <a href="#">Процесс</a>
-        </div>
-      </div>
-      <div class="menu__item">
-        <div class="menu__item-img">
-          <img src="images/otchet.svg" alt="">
-        </div>
-        <div>
-          <a href="#">Отчётность</a>
-        </div>
-      </div>
-
-    </nav>
-
     <section class="main-block index">
-        <div class="page-title page-title--btn">
-          <h1 class="title-text">
-            Реестр услуг
-          </h1>
-          <div class="title-btn">
-            <button class="btn">Загрузить файл</button>
-            <button class="btn">Добавить</button>
-          </div>
+      <div class="page-title page-title--btn">
+        <h1 class="title-text">
+          Реестр услуг
+        </h1>
+        <div class="title-btn">
+          <button class="btn">Загрузить файл</button>
+          <button class="btn">Добавить</button>
         </div>
-
+      </div>
       <div class="form-block">
-
         <form class="form-block__container">
           <div class="form__item item1">
             <div id="form1" class="item__container">

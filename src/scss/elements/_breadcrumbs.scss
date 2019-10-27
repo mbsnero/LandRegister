@@ -36,6 +36,11 @@
   cursor: pointer;
 }
 
-.breadcrumbs__item--active {
-  color: $navFontActive;
+.breadcrumbs__link {
+  text-decoration: none;
+  color: $navFont;
+
+  &--active {
+    color: $navFontActive;
+  }
 }

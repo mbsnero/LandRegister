@@ -1,10 +1,10 @@
 @import "../variables";
 
 .menu {
-  width: 20%;
+  width: 100px;
+  overflow-x: hidden;
   font-family: 'Helvetica';
-  display: flex;
-  flex-direction: column;
+  transition: width .4s, visibility .4s;
 }
 
 .menu__select-box {
@@ -30,4 +30,8 @@
 .menu__item-img {
   min-width: 40px;
   margin-right: 20px;
+}
+
+.menu__link {
+  visibility: hidden;
 }

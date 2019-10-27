@@ -1,0 +1,20 @@
+@import "../variables";
+
+.button {
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	font-family: inherit;
+	font-weight: 300;
+	cursor: pointer;
+	transition: box-shadow .1s ease-out;
+
+	&:focus {
+		outline: none;
+	}
+
+	&--big {
+		font-size: 1.6rem;
+		padding: 1.1rem 7.5rem;
+  }
+}
