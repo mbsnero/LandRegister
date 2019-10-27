@@ -54,42 +54,6 @@
       </div>
     </nav>
     <div class="container">
-      <nav class="menu js-menu">
-      	<button class="button hamburger" type="button">
-						<span class="hamburger__label">Открыть меню</span>
-				</button>
-        <div class="menu__select-box">
-          <select id="select_profile" class="menu__select select" name="state">
-            <option></option>
-            <option value="value_1">Профиль 1</option>
-            <option value="value_2">Профиль 2</option>
-          </select>
-        </div>
-        <div class="menu__item">
-          <div class="menu__item-img">
-            <img src="images/reestr.svg" alt="">
-          </div>
-          <div>
-            <a class="menu__link" href="#">Реестр земельных <br> участков</a>
-          </div>
-        </div>
-        <div class="menu__item">
-          <div class="menu__item-img">
-            <img src="images/process.svg" alt="">
-          </div>
-          <div>
-            <a class="menu__link" href="#">Процесс</a>
-          </div>
-        </div>
-        <div class="menu__item">
-          <div class="menu__item-img">
-            <img src="images/otchet.svg" alt="">
-          </div>
-          <div>
-            <a class="menu__link" href="#">Отчётность</a>
-          </div>
-        </div>
-      </nav>
       {% block content %} {% endblock %}
     </div>
     <footer class="footer">
