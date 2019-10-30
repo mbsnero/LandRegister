@@ -16,15 +16,17 @@
 {% extends "src/njc/layout.njc" %}
 {% block content %}
 <nav class="menu js-menu js-menu--activated">
-  <button class="button hamburger" type="button">
+  <div class="menu__container">
+    <div class="menu__select-box">
+      <select id="select_profile" class="menu__select select" name="state">
+        <option></option>
+        <option value="value_1">Профиль 1</option>
+        <option value="value_2">Профиль 2</option>
+      </select>
+    </div>
+    <button class="button hamburger" type="button">
       <span class="hamburger__label">Открыть меню</span>
-  </button>
-  <div class="menu__select-box">
-    <select id="select_profile" class="menu__select select" name="state">
-      <option></option>
-      <option value="value_1">Профиль 1</option>
-      <option value="value_2">Профиль 2</option>
-    </select>
+    </button>
   </div>
   <div class="menu__item">
     <div class="menu__item-img">
