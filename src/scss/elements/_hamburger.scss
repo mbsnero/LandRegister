@@ -2,11 +2,11 @@
 
 .hamburger {
 	width: 34px;
-  height: 24px;
-  margin-bottom: 30px;
+	height: 24px;
 	font-size: 20px;
 	color: $btn;
 	position: relative;
+	left: 2px;
 	text-indent: -9999px;
   z-index: 2;
 
@@ -47,21 +47,21 @@
 
 
 .js-menu--activated .hamburger:before {
-	transform: translate3d(0, -50%, 0) rotate(45deg);
-	top: 90%;
+	transform: translate3d(0,-50%,0) rotate(45deg);
+	top: 50%;
 	transition-duration: .2s;
 }
 
 .js-menu {
 
   .menu__select-box {
-    visibility: hidden;;
+    display: none;
   }
 }
 
 .js-menu--activated .hamburger:after {
 	transform: translate3d(0, -50%, 0) rotate(135deg);
-	top: 0%;
+	top: 50%;
 	transition-duration: .2s;
 }
 
@@ -76,18 +76,18 @@
   overflow-x: visible;
 
   .menu__select-box {
-    visibility: visible;
+    display: block;
   }
 
   .hamburger {
-    left: 87%;
+    margin-left: 10px;
   }
 
   .menu__link {
     visibility: visible;
   }
   .hamburger {
-    width: 34px;
-    height: 24px;
+    width: 30px;
+    height: 22px;
   }
 }
