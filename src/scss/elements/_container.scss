@@ -4,6 +4,8 @@
   display: flex;
   justify-content: space-between;
   width: 1200px;
+  box-sizing: border-box;
+  max-width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -13,6 +15,26 @@
 
 .main-container {
   margin-left: 30px;
+  box-sizing: border-box;
   width: 80%;
   flex-grow: 1;
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .main-container {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+
 }

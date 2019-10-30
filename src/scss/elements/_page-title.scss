@@ -25,3 +25,18 @@
     }
   }
 }
+
+@media all and (max-width: 768px) {
+  .page-title--btn {
+    flex-wrap: wrap;
+  
+    .title-btn {
+      margin-top: 15px;
+      width: 100%;
+      flex-wrap: wrap;
+      .btn {
+        margin-left: 0;
+      }
+    }
+  }
+}

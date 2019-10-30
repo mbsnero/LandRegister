@@ -13,7 +13,7 @@
 
 {# Вставляем контент шаблонов #}
 {% block content %}
-<nav class="menu js-menu">
+<nav class="menu js-menu js-menu--activated">
   <button class="button hamburger" type="button">
       <span class="hamburger__label">Открыть меню</span>
   </button>
@@ -53,7 +53,7 @@
     <section class="main-block index">
       <div class="page-title page-title--btn">
         <h1 class="title-text">
-          Реестр услуг
+          Реестр земельных участков
         </h1>
         <div class="title-btn">
           <button class="btn">Загрузить файл</button>
@@ -81,14 +81,6 @@
               <input class="input" type="text" placeholder="Населённый пункт">
               <input class="input" type="text" placeholder="Улица">
               <input class="input" type="text" placeholder="Дом">
-            </div>
-          </div>
-          <div class="form__item item3">
-            <div id="form3" class="item__container">
-              <label class="toggle toggle--checkbox">
-							  <input class="toggle__input" name="in-work" type="checkbox" checked="">
-							  <span class="toggle__label">В работе</span>
-						  </label>
             </div>
           </div>
           <div class="form__item item4">
@@ -145,6 +137,14 @@
                   <option value="rosereester_2">Разрешение 2</option>
                 </select>
               </label>
+            </div>
+          </div>
+          <div class="form__item item3">
+            <div id="form3" class="item__container">
+              <label class="toggle toggle--checkbox">
+							  <input class="toggle__input" name="in-work" type="checkbox" checked="">
+							  <span class="toggle__label">В работе</span>
+						  </label>
             </div>
           </div>
         </form>
