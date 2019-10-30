@@ -188,3 +188,25 @@
     }
   }
 }
+
+@media (max-width: 576px) {
+  .card {
+    .main-info__check {
+      min-width: 100%;
+    }
+
+    .com__row {
+      flex-wrap: wrap;
+    }
+
+    .com__input {
+      min-width: 100%;
+    }
+
+    .com__check {
+      margin-left: 0!important;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+  }
+}
