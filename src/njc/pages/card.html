@@ -5,7 +5,7 @@
     "title"  : "Реестр земельных участков",
     "url" : "index.html"
   },
-    {
+  {
     "title"  : "Карточка земельного участка",
     "url" : "card.html",
     "active": true
@@ -15,7 +15,7 @@
 
 {% extends "src/njc/layout.njc" %}
 {% block content %}
-<nav class="menu js-menu">
+<nav class="menu js-menu js-menu--activated">
   <button class="button hamburger" type="button">
       <span class="hamburger__label">Открыть меню</span>
   </button>
@@ -55,7 +55,7 @@
   <div class="card main-block">
     <div class="page-title">
       <h1 class="title-text">
-        Реестр земельных участков
+        Карточка земельных участков
       </h1>
     </div>
       <form class="header-form">

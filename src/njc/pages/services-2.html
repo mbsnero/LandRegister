@@ -1,53 +1,47 @@
+{# Переменные #}
+{% set title = "Госуслуги" %}
+{% set navItems = [
+  {
+    "title"  : "Реестр услуг",
+    "url" : "services-1.html",
+    "active": true
+  }
+]
+%}
+
 {% extends "src/njc/layout.njc" %}
 {% block content %}
-<nav class="breadcrumbs">
-  <div class="breadcrumbs__container">
-    <div class="breadcrumbs__logo">
-      <img src="images/home-icon.png" alt="">
+
+<nav class="menu js-menu js-menu--activated">
+  <button class="button hamburger" type="button">
+      <span class="hamburger__label">Открыть меню</span>
+  </button>
+  <div class="menu__select-box">
+    <select id="select_profile" class="menu__select select" name="state">
+      <option></option>
+      <option value="value_1">Профиль 1</option>
+      <option value="value_2">Профиль 2</option>
+    </select>
+  </div>
+  <div class="menu__item">
+    <div class="menu__item-img">
+      <img src="images/main-info-icon.svg" alt="">
     </div>
-    <div class="breadcrumbs__item">
-      <p>Главная</p>
+    <div>
+      <a class="menu__link" href="#">Основная информация</a>
     </div>
-    <div class="breadcrumbs__crumb">
-      <img src="images/crumbs.png" alt="">
+  </div>
+  <div class="menu__item">
+    <div class="menu__item-img">
+      <img src="images/servises-reestr-icon.svg" alt="">
     </div>
-    <div class="breadcrumbs__item breadcrumbs__item--active">
-      <p>Реестр Услуг</p>
+    <div>
+      <a class="menu__link" href="#">Реестр услуг</a>
     </div>
   </div>
 </nav>
 
 <section class="main-container">
-  <nav class="menu">
-    <div class="menu__select-box">
-      <label class="label-select">
-        <span class="label-select__hint"></span>
-        <select class="menu__select select" name="places">
-          <option>Профиль для бизнеса</option>
-          <option value="place_1">Значение 1</option>
-          <option value="place_2">Значение 2</option>
-        </select>
-      </label>
-    </div>
-    
-    <div class="menu__item">
-      <div class="menu__item-img">
-        <img src="images/main-info-icon.svg" alt="">
-      </div>
-      <div>
-        <a href="#">Основная информация</a>
-      </div>
-    </div>
-    <div class="menu__item">
-      <div class="menu__item-img">
-        <img src="images/servises-reestr-icon.svg" alt="">
-      </div>
-      <div>
-        <a href="#">Реестр услуг</a>
-      </div>
-    </div>
-  </nav>
-
   <div class="main-block services-2">
     <div class="page-title page-title--btn">
       <h1 class="title-text">

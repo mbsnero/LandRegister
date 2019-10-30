@@ -1,78 +1,71 @@
+{# Переменные #}
+{% set title = "Госуслуги" %}
+{% set navItems = [
+  {
+    "title"  : "Реестр услуг",
+    "url" : "services-1.html",
+    "active": true
+  }
+]
+%}
+
 {% extends "src/njc/layout.njc" %}
 {% block content %}
 
-<nav class="breadcrumbs">
-  <div class="breadcrumbs__container">
-    <div class="breadcrumbs__logo">
-      <img src="images/home-icon.png" alt="">
+<nav class="menu js-menu js-menu--activated">
+  <button class="button hamburger" type="button">
+      <span class="hamburger__label">Открыть меню</span>
+  </button>
+  <div class="menu__select-box">
+    <select id="select_profile" class="menu__select select" name="state">
+      <option></option>
+      <option value="value_1">Профиль 1</option>
+      <option value="value_2">Профиль 2</option>
+    </select>
+  </div>
+  <div class="menu__item">
+    <div class="menu__item-img">
+      <img src="images/in-work.svg" alt="">
     </div>
-    <div class="breadcrumbs__item">
-      <p>Главная</p>
+    <div>
+      <a class="menu__link" href="#">В работе</a>
     </div>
-    <div class="breadcrumbs__crumb">
-      <img src="images/crumbs.png" alt="">
+  </div>
+  <div class="menu__item">
+    <div class="menu__item-img">
+      <img src="images/zeml.svg" alt="">
     </div>
-    <div class="breadcrumbs__item breadcrumbs__item--active">
-      <p>Реестр Услуг</p>
+    <div>
+      <a class="menu__link" href="#">Избранные земельные участки</a>
+    </div>
+  </div>
+  <div class="menu__item">
+    <div class="menu__item-img">
+      <img src="images/history.svg" alt="">
+    </div>
+    <div>
+      <a class="menu__link" href="#">История</a>
+    </div>
+  </div>
+  <div class="menu__item">
+    <div class="menu__item-img">
+      <img src="images/search.svg" alt="">
+    </div>
+    <div>
+      <a class="menu__link" href="#">Критерии поиска</a>
+    </div>
+  </div>
+  <div class="menu__item">
+    <div class="menu__item-img">
+      <img src="images/services.svg" alt="">
+    </div>
+    <div>
+      <a class="menu__link" href="#">Избранные сопутствующие услуги</a>
     </div>
   </div>
 </nav>
 
 <section class="main-container">
-  <nav class="menu">
-    <div class="menu__select-box">
-      <label class="label-select">
-        <span class="label-select__hint"></span>
-        <select class="menu__select select" name="places">
-          <option>Профиль для бизнеса</option>
-          <option value="place_1">Значение 1</option>
-          <option value="place_2">Значение 2</option>
-        </select>
-      </label>
-    </div>
-    
-    <div class="menu__item">
-      <div class="menu__item-img">
-        <img src="images/in-work.svg" alt="">
-      </div>
-      <div>
-        <a href="#">В работе</a>
-      </div>
-    </div>
-    <div class="menu__item">
-      <div class="menu__item-img">
-        <img src="images/zeml.svg" alt="">
-      </div>
-      <div>
-        <a href="#">Избранные земельные участки</a>
-      </div>
-    </div>
-    <div class="menu__item">
-      <div class="menu__item-img">
-        <img src="images/history.svg" alt="">
-      </div>
-      <div>
-        <a href="#">История</a>
-      </div>
-    </div>
-    <div class="menu__item">
-      <div class="menu__item-img">
-        <img src="images/search.svg" alt="">
-      </div>
-      <div>
-        <a href="#">Критерии поиска</a>
-      </div>
-    </div>
-    <div class="menu__item">
-      <div class="menu__item-img">
-        <img src="images/services.svg" alt="">
-      </div>
-      <div>
-        <a href="#">Избранные сопутствующие услуги</a>
-      </div>
-    </div>
-  </nav>
-
   <div class="main-block services-1">
     <div class="page-title">
       <h1 class="title-text">
@@ -82,22 +75,22 @@
 
     <div class="form">
       <div class="form__item">
-        <label class="label">Стоимость</label>
-        <input class="input" type="text" placeholder="От">
+        <label class="label">Наименование организации</label>
+        <input class="input" type="text" placeholder="">
       </div>
-      <div class="form__item">
+      <div class="form__item form__item--checkbox">
         <label class="toggle toggle--checkbox">
           <input class="toggle__input" name="in-work" type="checkbox">
-          <span class="toggle__label">Для многодетных семей</span>
+          <span class="toggle__label">Избранные</span>
         </label>
       </div>
       <div class="form__item">
         <label class="label-select">
-          <span class="label-select__hint">Наименование участка</span>
+          <span class="label-select__hint">Вид услуги</span>
           <select class="menu__select select" name="places">
             <option></option>
-            <option value="place_1">Участок 1</option>
-            <option value="place_2">Участок 2</option>
+            <option value="place_1">Услуга 1</option>
+            <option value="place_2">Услуга 2</option>
           </select>
         </label>
       </div>

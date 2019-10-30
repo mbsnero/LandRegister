@@ -44,3 +44,11 @@
     color: $navFontActive;
   }
 }
+
+@media (max-width: 576px) {
+
+  .breadcrumbs {
+    display: none;
+  }
+
+}

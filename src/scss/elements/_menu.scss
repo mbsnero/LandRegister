@@ -35,3 +35,21 @@
 .menu__link {
   visibility: hidden;
 }
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+  .menu {
+    min-width: 100%;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+
+}
