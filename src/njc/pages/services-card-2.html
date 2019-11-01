@@ -1,0 +1,142 @@
+{# Переменные #}
+{% set title = "Госуслуги" %}
+{% set navItems = [
+  {
+    "title"  : "Реестр услуг",
+    "url" : "services-1.html"
+  },
+  {
+    "title"  : "Карточка услуги",
+    "url" : "services-1.html",
+    "active": true
+  }
+]
+%}
+
+{% extends "src/njc/layout.njc" %}
+{% block content %}
+
+<nav class="menu js-menu js-menu--activated">
+  <div class="menu__container">
+    <div class="menu__select-box">
+      <select id="select_profile" class="menu__select select" name="state">
+        <option></option>
+        <option value="value_1">Профиль 1</option>
+        <option value="value_2">Профиль 2</option>
+      </select>
+    </div>
+    <button class="button hamburger" type="button">
+        <span class="hamburger__label">Открыть меню</span>
+    </button>
+  </div>
+  <div class="menu__item">
+    <div class="menu__item-img">
+      <img src="images/main-info-icon.svg" alt="">
+    </div>
+    <div>
+      <a class="menu__link" href="#">Основная информация</a>
+    </div>
+  </div>
+  <div class="menu__item">
+    <div class="menu__item-img">
+      <img src="images/servises-reestr-icon.svg" alt="">
+    </div>
+    <div>
+      <a class="menu__link" href="#">Реестр услуг</a>
+    </div>
+  </div>
+</nav>
+
+<section class="main-container">
+  <div class="main-block services-card">
+    <div class="page-title">
+      <h1 class="title-text">
+        Карточка услуги
+      </h1>
+    </div>
+
+    <div class="title-block">
+      <p class="title-block__text">Информация об организации</p>
+      <img class="title-block__btn" src="images/accordion_arr_up_hov.svg" alt="">
+    </div>
+
+    <div class="form">
+      <div class="form__item form__item--alone">
+        <label class="label" for="">Наименование организации</label>
+        <input class="input" type="text">
+      </div>
+      <div class="form__item">
+        <label class="label" for="">Адрес</label>
+        <input class="input" type="text">
+      </div>
+      <div class="form__item">
+        <label class="label" for="">Телефон</label>
+        <input class="input" type="text">
+      </div>
+      <div class="form__item form__item--area">
+        <label class="label">Описание</label>
+        <textarea class="textarea" id="" cols="30" rows="10"></textarea>
+      </div>
+    </div>
+
+    <div class="title-block">
+      <p class="title-block__text">Информация об услуге</p>
+      <img class="title-block__btn" src="images/accordion_arr_up_hov.svg" alt="">
+    </div>
+
+    <div class="form">
+      <div class="form__item">
+        <label class="label-select">
+          <span class="label-select__hint">Статус</span>
+          <select class="menu__select select" name="place">
+            <option></option>
+            <option value="place_1">Услуга 1</option>
+            <option value="place_2">Услуга 2</option>
+          </select>
+        </label>
+      </div>
+      <div class="form__item">
+        <label class="label-select">
+          <span class="label-select__hint">Вид услуги</span>
+          <select class="menu__select select" name="place">
+            <option></option>
+            <option value="place_1">Услуга 1</option>
+            <option value="place_2">Услуга 2</option>
+          </select>
+        </label>
+      </div>
+      <div class="form__item form__item--checkbox">
+        <label class="toggle toggle--checkbox">
+          <input class="toggle__input" name="in-work" type="checkbox">
+          <span class="toggle__label">Указать диапазон</span>
+        </label>
+      </div>
+      <div class="form__item form__item--double">
+        <label class="label">Стоимость</label>
+        <input class="input" type="text" placeholder="От">
+        <input class="input" type="text" placeholder="До">
+      </div>
+      <div class="form__item form__item--area">
+        <label class="label" for="">Краткое описание услуги</label>
+        <input class="input" type="text">
+      </div>
+      <div class="form__item form__item--area">
+        <label class="label" for="">Описание услуги</label>
+        <textarea class="textarea" id="" cols="30" rows="10"></textarea>
+      </div>
+      <div class="form__item form__item--area">
+        <label class="label" for="">Комментарий от модератора</label>
+        <input class="input" type="text">
+      </div>
+    </div>
+
+    <div class="btn-block">
+      <button class="btn">Сохранить</button>
+      <button class="btn">Сохранить и отправить на модерацию</button>
+      <button class="btn btn--noactive">Отмена</button>
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}

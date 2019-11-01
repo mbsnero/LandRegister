@@ -1,0 +1,129 @@
+{# Переменные #}
+{% set title = "Госуслуги" %}
+{% set navItems = [
+  {
+    "title"  : "Реестр услуг",
+    "url" : "services-1.html"
+  },
+  {
+    "title"  : "Описание услуги",
+    "url" : "services-1.html",
+    "active": true
+  }
+]
+%}
+
+{% extends "src/njc/layout.njc" %}
+{% block content %}
+
+<nav class="menu js-menu js-menu--activated">
+  <div class="menu__container">
+    <button class="button hamburger" type="button">
+        <span class="hamburger__label">Открыть меню</span>
+    </button>
+  </div>
+  <div class="menu__item">
+    <div class="menu__item-img">
+      <img src="images/in-work.svg" alt="">
+    </div>
+    <div>
+      <a class="menu__link" href="#">В работе</a>
+    </div>
+  </div>
+  <div class="menu__item">
+    <div class="menu__item-img">
+      <img src="images/zeml.svg" alt="">
+    </div>
+    <div>
+      <a class="menu__link" href="#">Избранные земельные участки</a>
+    </div>
+  </div>
+  <div class="menu__item">
+    <div class="menu__item-img">
+      <img src="images/history.svg" alt="">
+    </div>
+    <div>
+      <a class="menu__link" href="#">История</a>
+    </div>
+  </div>
+  <div class="menu__item">
+    <div class="menu__item-img">
+      <img src="images/search.svg" alt="">
+    </div>
+    <div>
+      <a class="menu__link" href="#">Критерии поиска</a>
+    </div>
+  </div>
+  <div class="menu__item">
+    <div class="menu__item-img">
+      <img src="images/services.svg" alt="">
+    </div>
+    <div>
+      <a class="menu__link" href="#">Избранные сопутствующие услуги</a>
+    </div>
+  </div>
+</nav>
+
+<section class="main-container">
+  <div class="main-block services-card">
+    <div class="page-title">
+      <h1 class="title-text">
+        Описание услуги
+      </h1>
+    </div>
+
+    <div class="title-block">
+      <p class="title-block__text">Основная информация</p>
+      <img class="title-block__btn" src="images/accordion_arr_up_hov.svg" alt="">
+    </div>
+
+    <div class="form">
+      <div class="form__item form__item--alone">
+        <label class="label" for="">Наименование организации</label>
+        <input class="input" type="text">
+      </div>
+      <div class="form__item">
+        <label class="label" for="">Адрес</label>
+        <input class="input" type="text">
+      </div>
+      <div class="form__item">
+        <label class="label" for="">Телефон</label>
+        <input class="input" type="text">
+      </div>
+      <div class="form__item form__item--area">
+        <label class="label">Описание</label>
+        <textarea class="textarea" id="" cols="30" rows="10"></textarea>
+      </div>
+    </div>
+
+    <div class="title-block">
+      <p class="title-block__text">Информация об услуге</p>
+      <img class="title-block__btn" src="images/accordion_arr_up_hov.svg" alt="">
+    </div>
+
+    <div class="form">
+      <div class="form__item">
+        <label class="label-select">
+          <span class="label-select__hint">Вид услуги</span>
+          <select class="menu__select select" name="place">
+            <option></option>
+            <option value="place_1">Услуга 1</option>
+            <option value="place_2">Услуга 2</option>
+          </select>
+        </label>
+      </div>
+      <div class="form__item">
+        <label class="label" for="">Стоимость</label>
+        <input class="input" type="text">
+      </div>
+      <div class="form__item form__item--area">
+        <label class="label">Описание услуги</label>
+        <textarea class="textarea" id="" cols="30" rows="10"></textarea>
+      </div>
+    </div>
+
+    <button class="btn btn--noactive">Выход</button>
+  </div>
+</section>
+
+{% endblock %}
