@@ -75,7 +75,7 @@ gulp.task('styles', function () {
 	var processors = [
 		autoprefixer({
 			browsers: ['last 2 versions']
-		}), cssnano
+		}),
 	];
 	return gulp.src('src/scss/style.scss')
 		.pipe(sourcemaps.init())

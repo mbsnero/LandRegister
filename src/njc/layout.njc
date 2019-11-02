@@ -30,30 +30,30 @@
         </div>
       </div>
     </header>
-    <nav class="breadcrumbs">
-      <div class="breadcrumbs__container">
-        <div class="breadcrumbs__logo">
-          <img src="images/home-icon.png" alt="">
-        </div>
-        <div class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="/">Главная</a>
-        </div>
-        {% if isBreadcrumbs %}
-          {% for item in navItems %}
-          <div class="breadcrumbs__crumb">
-            <img src="images/crumbs.png" alt="">
+    {% if isBreadcrumbs %}
+      <nav class="breadcrumbs">
+        <div class="breadcrumbs__container">
+          <div class="breadcrumbs__logo">
+            <img src="images/home-icon.png" alt="">
           </div>
           <div class="breadcrumbs__item">
-            <a 
-              class="breadcrumbs__link {% if item.active == true %}breadcrumbs__link--active{% endif %}" 
-              href={{item.url}}>
-                {{ item.title }}
-          </a>
+            <a class="breadcrumbs__link" href="/">Главная</a>
           </div>
-          {% endfor %}
-        {% endif %}
-      </div>
-    </nav>
+            {% for item in navItems %}
+            <div class="breadcrumbs__crumb">
+              <img src="images/crumbs.png" alt="">
+            </div>
+            <div class="breadcrumbs__item">
+              <a 
+                class="breadcrumbs__link {% if item.active == true %}breadcrumbs__link--active{% endif %}" 
+                href={{item.url}}>
+                  {{ item.title }}
+            </a>
+            </div>
+            {% endfor %}
+        </div>
+      </nav>
+    {% endif %}
     <div class="container">
       {% block content %} {% endblock %}
     </div>
