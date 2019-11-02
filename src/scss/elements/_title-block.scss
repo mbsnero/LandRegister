@@ -20,5 +20,23 @@
     position: relative;
     top: 2px;
     margin-left: 5px;
+    transition-duration: 0.5s;
+
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  .animated {
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  .not-animated {
   }
 }

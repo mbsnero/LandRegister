@@ -3,6 +3,8 @@
 //= menu.js
 //= select.js
 //= tabs.js
+//= card-acc.js
 
 $(document).ready(function() {
+  
 });
