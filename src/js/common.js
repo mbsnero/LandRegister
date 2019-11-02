@@ -6,5 +6,5 @@
 //= card-acc.js
 
 $(document).ready(function() {
-  
+   
 });
