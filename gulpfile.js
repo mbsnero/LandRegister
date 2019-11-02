@@ -63,9 +63,7 @@ gulp.task('layout', function () {
 gulp.task('js-build', function () {
 	gulp.src('src/js/c*.js')
         .pipe(rigger())
-        .pipe(sourcemaps.init()) 
         .pipe(uglify())
-        .pipe(sourcemaps.write()) 
 		.pipe(gulp.dest('build/js'))
         .pipe(server.reload({stream:true}))
 
@@ -78,10 +76,8 @@ gulp.task('styles', function () {
 		}),
 	];
 	return gulp.src('src/scss/style.scss')
-		.pipe(sourcemaps.init())
 		.pipe(sass().on('error', sass.logError))
 		.pipe(postcss(processors))
-		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('build/css'))
 		.pipe(server.reload({stream: true}));
 });
