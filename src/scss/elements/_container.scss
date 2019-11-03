@@ -1,6 +1,6 @@
 @import "../variables";
 
-.container {
+.sg-container {
   display: flex;
   justify-content: space-between;
   width: 1200px;
@@ -25,7 +25,7 @@
 }
 
 @media (max-width: 768px) {
-  .container {
+  .sg-container {
     flex-wrap: wrap;
   }
 

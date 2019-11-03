@@ -20,32 +20,32 @@
   <title>{{ title }}</title>
 </head>
 <body>
-    <header class="header">
-      <div class="header__container">
-        <a href="/" class="header__logo">
+    <header class="sg-header">
+      <div class="sg-header__container">
+        <a href="/" class="sg-header__logo">
           <img src="images/logo-penza.jpg" alt="Госуслуги">
         </a>
-        <div class="header__user">
-          <a class="link header__link" href="/">Кандрашкина Т.С.</a>
+        <div class="sg-header__user">
+          <a class="sg-link sg-header__link" href="/">Кандрашкина Т.С.</a>
         </div>
       </div>
     </header>
     {% if isBreadcrumbs %}
-      <nav class="breadcrumbs">
-        <div class="breadcrumbs__container">
-          <div class="breadcrumbs__logo">
+      <nav class="sg-breadcrumbs">
+        <div class="sg-breadcrumbs__container">
+          <div class="sg-breadcrumbs__logo">
             <img src="images/home-icon.png" alt="">
           </div>
-          <div class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="/">Главная</a>
+          <div class="sg-breadcrumbs__item">
+            <a class="sg-breadcrumbs__link" href="/">Главная</a>
           </div>
             {% for item in navItems %}
-            <div class="breadcrumbs__crumb">
+            <div class="sg-breadcrumbs__crumb">
               <img src="images/crumbs.png" alt="">
             </div>
-            <div class="breadcrumbs__item">
+            <div class="sg-breadcrumbs__item">
               <a 
-                class="breadcrumbs__link {% if item.active == true %}breadcrumbs__link--active{% endif %}" 
+                class="sg-breadcrumbs__link {% if item.active == true %}sg-breadcrumbs__link--active{% endif %}" 
                 href={{item.url}}>
                   {{ item.title }}
             </a>
@@ -54,10 +54,10 @@
         </div>
       </nav>
     {% endif %}
-    <div class="container">
+    <div class="sg-container">
       {% block content %} {% endblock %}
     </div>
-    <footer class="footer">
+    <footer class="sg-footer">
       Footer
     </footer>
 </body>
