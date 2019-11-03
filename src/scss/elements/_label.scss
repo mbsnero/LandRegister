@@ -1,6 +1,6 @@
 @import "../variables";
 
-.label {
+.sg-label {
   position: absolute;
   top: 6px;
   left: 15px;
@@ -12,25 +12,23 @@
   margin-bottom: 4px;
 }
 
-.label--in-work {
+.sg-label--in-work {
   margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
+  padding: 0;
+  border: 0;
   vertical-align: baseline;
   position: static;
   font-size: 15px;
   color: $black;
 }
 
-.label-select {
+.sg-label-select {
   position: relative;
   display: block;
   width: 100%;
 }
 
-.label-select__hint {
+.sg-label-select__hint {
   position: absolute;
   z-index: 999;
   top: 5px;

@@ -15,7 +15,7 @@
 <nav class="sg-menu js-menu js-menu--activated">
   <div class="menu__container">
     <div class="menu__select-box">
-      <select id="select_profile" class="sg-menu__select select" name="state">
+      <select id="select_profile" class="sg-menu__select sg-select" name="state">
         <option></option>
         <option value="value_1">Профиль 1</option>
         <option value="value_2">Профиль 2</option>
@@ -69,15 +69,15 @@
 
 <section class="sg-main-container">
   <div class="main-block services-1">
-    <div class="page-title">
-      <h1 class="title-text">
+    <div class="sg-page-title">
+      <h1 class="sg-title-text">
         Реестр услуг
       </h1>
     </div>
 
     <div class="form">
       <div class="sg-form__item">
-        <label class="label">Наименование организации</label>
+        <label class="sg-label">Наименование организации</label>
         <input class="sg-input" type="text" placeholder="">
       </div>
       <div class="sg-form__item form__item--checkbox">
@@ -87,9 +87,9 @@
         </label>
       </div>
       <div class="sg-form__item">
-        <label class="label-select">
-          <span class="label-select__hint">Вид услуги</span>
-          <select class="sg-menu__select select" name="places">
+        <label class="sg-label-select">
+          <span class="sg-label-select__hint">Вид услуги</span>
+          <select class="sg-menu__select sg-select" name="places">
             <option></option>
             <option value="place_1">Услуга 1</option>
             <option value="place_2">Услуга 2</option>
@@ -97,7 +97,7 @@
         </label>
       </div>
       <div class="sg-form__item form__item--double">
-        <label class="label">Стоимость</label>
+        <label class="sg-label">Стоимость</label>
         <input class="sg-input" type="text" placeholder="От">
         <input class="sg-input" type="text" placeholder="До">
       </div>
@@ -108,28 +108,28 @@
           <button class="sg-btn">Сбросить</button>
         </div>
         <div class="sg-paginator">
-          <div class="paginator__item paginator__item--active">
+          <div class="sg-paginator__item sg-paginator__item--active">
             <p>1</p>
           </div>
-          <div class="paginator__item">
+          <div class="sg-paginator__item">
             <p>2</p>
           </div>
-          <div class="paginator__item">
+          <div class="sg-paginator__item">
             <p>3</p>
           </div>
-          <div class="paginator__item">
+          <div class="sg-paginator__item">
             <p>4</p>
           </div>
-          <div class="paginator__item paginator__item--hidden">
+          <div class="sg-paginator__item sg-paginator__item--hidden">
             <p>...</p>
           </div>
-          <div class="paginator__item">
+          <div class="sg-paginator__item">
             <p>10</p>
           </div>
-          <div class="paginator__item">
+          <div class="sg-paginator__item">
             <p>11</p>
           </div>
-          <div class="paginator__item">
+          <div class="sg-paginator__item">
             <p>12</p>
           </div>
         </div>

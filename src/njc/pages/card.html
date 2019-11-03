@@ -18,7 +18,7 @@
 <nav class="sg-menu js-menu js-menu--activated">
   <div class="menu__container">
     <div class="menu__select-box">
-      <select id="select_profile" class="sg-menu__select select" name="state">
+      <select id="select_profile" class="sg-menu__select sg-select" name="state">
         <option></option>
         <option value="value_1">Профиль 1</option>
         <option value="value_2">Профиль 2</option>
@@ -55,16 +55,16 @@
 </nav>
 <section class="sg-main-container">
   <div class="card main-block">
-    <div class="page-title">
-      <h1 class="title-text">
+    <div class="sg-page-title">
+      <h1 class="sg-title-text">
         Карточка земельных участков
       </h1>
     </div>
       <form class="header-form">
         <div class="header-form__item">
-          <label class="label-select">
-            <span class="label-select__hint">Статус</span>
-            <select id="select_status" class="sg-menu__select select" name="status">
+          <label class="sg-label-select">
+            <span class="sg-label-select__hint">Статус</span>
+            <select id="select_status" class="sg-menu__select sg-select" name="status">
               <option></option>
               <option value="status_1">Статус 1</option>
               <option value="status_2">Статус 2</option>
@@ -72,15 +72,15 @@
           </label>
         </div>
         <div class="header-form__item">
-          <label class="label" for="">Кадастровый номер</label>
+          <label class="sg-label" for="">Кадастровый номер</label>
           <input class="sg-input sg-input--required" type="text">
         </div>
         <div class="header-form__item header-form__item--long">
-          <label class="label" for="">Местоположение</label>
+          <label class="sg-label" for="">Местоположение</label>
           <input class="sg-input sg-input--required" type="text">
         </div>
         <div class="header-form__item header-form__item--adress">
-          <label class="label">Адрес</label>
+          <label class="sg-label">Адрес</label>
           <input class="sg-input sg-input--required" type="text" placeholder="Район">
           <input class="sg-input sg-input--required" type="text" placeholder="Населённый пункт">
           <input class="sg-input sg-input--required" type="text" placeholder="Улица">
@@ -149,17 +149,17 @@
 					</label>
         </div>
         <div class="main-info__item">
-          <label class="label" for="">Дата постановки на кадастровый учёт</label>
+          <label class="sg-label" for="">Дата постановки на кадастровый учёт</label>
           <input class="sg-input" type="text">
         </div>
         <div class="main-info__item">
-          <label class="label" for="">Площадь</label>
+          <label class="sg-label" for="">Площадь</label>
           <input class="sg-input" type="text">
         </div>
         <div class="main-info__item">
-          <label class="label-select">
-            <span class="label-select__hint">Наименование участка</span>
-            <select class="sg-menu__select select" name="places">
+          <label class="sg-label-select">
+            <span class="sg-label-select__hint">Наименование участка</span>
+            <select class="sg-menu__select sg-select" name="places">
               <option></option>
               <option value="place_1">Участок 1</option>
               <option value="place_2">Участок 2</option>
@@ -167,9 +167,9 @@
           </label>
         </div>
         <div class="main-info__item">
-          <label class="label-select">
-            <span class="label-select__hint">Категория земель</span>
-            <select class="sg-menu__select select" name="place">
+          <label class="sg-label-select">
+            <span class="sg-label-select__hint">Категория земель</span>
+            <select class="sg-menu__select sg-select" name="place">
               <option></option>
               <option value="place_1">Участок 1</option>
               <option value="place_2">Участок 2</option>
@@ -177,21 +177,21 @@
           </label>
         </div>
         <div class="main-info__item">
-          <label class="label" for="">Кадастровая стоимость</label>
+          <label class="sg-label" for="">Кадастровая стоимость</label>
           <input class="sg-input" type="text">
         </div>
         <div class="main-info__item">
-          <label class="label" for="">Первоначальный размер АП</label>
+          <label class="sg-label" for="">Первоначальный размер АП</label>
           <input class="sg-input" type="text">
         </div>
         <div class="main-info__item main-info__item--long">
-          <label class="label" for="">Первоначальный размер рыночной стоимости</label>
+          <label class="sg-label" for="">Первоначальный размер рыночной стоимости</label>
           <input class="sg-input" type="text">
         </div>
         <div class="main-info__item main-info__item--long">
-          <label class="label-select">
-            <span class="label-select__hint">Вид разрешённого использования минэкономразвития</span>
-            <select class="sg-menu__select select" name="place">
+          <label class="sg-label-select">
+            <span class="sg-label-select__hint">Вид разрешённого использования минэкономразвития</span>
+            <select class="sg-menu__select sg-select" name="place">
               <option></option>
               <option value="place_1">Участок 1</option>
               <option value="place_2">Участок 2</option>
@@ -199,9 +199,9 @@
           </label>
         </div>
         <div class="main-info__item main-info__item--long">
-          <label class="label-select">
-            <span class="label-select__hint">Вид разрешенного использования Росреестр</span>
-            <select class="sg-menu__select select" name="place">
+          <label class="sg-label-select">
+            <span class="sg-label-select__hint">Вид разрешенного использования Росреестр</span>
+            <select class="sg-menu__select sg-select" name="place">
               <option></option>
               <option value="place_1">Участок 1</option>
               <option value="place_2">Участок 2</option>
@@ -216,9 +216,9 @@
       </div>
       <div class="limit">
         <div class="limit__item">
-          <label class="label-select">
-            <span class="label-select__hint">Ви д ограничения</span>
-            <select class="sg-menu__select select" name="place">
+          <label class="sg-label-select">
+            <span class="sg-label-select__hint">Ви д ограничения</span>
+            <select class="sg-menu__select sg-select" name="place">
               <option></option>
               <option value="place_1">Участок 1</option>
               <option value="place_2">Участок 2</option>
@@ -226,11 +226,11 @@
           </label>
         </div>
         <div class="limit__item limit__item--long">
-          <label class="label" for="">Содержание</label>
+          <label class="sg-label" for="">Содержание</label>
           <input class="sg-input" type="text">
         </div>
         <div class="limit__item">
-          <label class="label" for="">Территориальная зона</label>
+          <label class="sg-label" for="">Территориальная зона</label>
           <input class="sg-input" type="text">
         </div>
         <button class="sg-btn">Добавить</button>
@@ -244,7 +244,7 @@
         <p>Расстояние</p>
         <div class="com__row">
           <div class="com__input">
-            <label class="label" for="">Водопровод</label>
+            <label class="sg-label" for="">Водопровод</label>
             <input class="sg-input" type="text">
           </div>
           <div class="com__check">
@@ -256,7 +256,7 @@
         </div>
         <div class="com__row">
           <div class="com__input">
-            <label class="label" for="">Газопровод</label>
+            <label class="sg-label" for="">Газопровод</label>
             <input class="sg-input" type="text">
           </div>
           <div class="com__check">
@@ -268,7 +268,7 @@
         </div>
         <div class="com__row">
           <div class="com__input">
-            <label class="label" for="">Линии электропередач</label>
+            <label class="sg-label" for="">Линии электропередач</label>
             <input class="sg-input" type="text">
           </div>
           <div class="com__check">
@@ -280,13 +280,13 @@
         </div>
         <div class="com__row">
           <div class="com__textarea">
-            <label class="label">Описание</label>
+            <label class="sg-label">Описание</label>
             <textarea class="textarea" id="" cols="30" rows="10"></textarea>
           </div>
         </div>
         <div class="com__row">
           <div class="com__textarea">
-            <label class="label">Описание</label>
+            <label class="sg-label">Описание</label>
             <textarea class="textarea textarea--required" id="" cols="30" rows="10"></textarea>
           </div>
         </div>

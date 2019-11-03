@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   /** Инициализация всех селекторов на страницы с классом select
    */
-  $(".select").select2({
+  $(".sg-select").select2({
     placeholder: ""
   });
 
