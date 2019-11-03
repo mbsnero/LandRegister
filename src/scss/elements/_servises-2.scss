@@ -1,21 +1,21 @@
 @import "../variables";
 
-.services-2 {
+.sg-services-2 {
 
-  .form {
+  .sg-sg-form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    .form__item--status {
+    .sg-form__item--status {
       width: 20%;
     }
 
-    .form__item--type {
+    .sg-form__item--type {
       width: 37%;
     }
 
-    .form__item--price {
+    .sg-form__item--price {
       width: 37%;
       display: flex;
       flex-wrap: wrap;
@@ -40,14 +40,14 @@
 
   }
 
-  .table-img {
+  .sg-table-img {
     width: 100%;
   }
 
 }
 
 @media (max-width: 992px) {
-  .services-2 {
+  .sg-services-2 {
   
     .sg-form__item {
       min-width: 100%;

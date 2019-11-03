@@ -1,8 +1,8 @@
 @import "../variables";
 
-.services-1 {
+.sg-services-1 {
 
-  .form {
+  .sg-sg-form {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -15,11 +15,11 @@
       width: 48%;
     }
 
-    .form__item--checkbox {
+    .sg-form__item--checkbox {
       padding: 15px 0;
     }
 
-    .form__item--double {
+    .sg-form__item--double {
       display: flex;
     }
   }
@@ -32,13 +32,13 @@
     flex-wrap: wrap;
   }
 
-  .table-img {
+  .sg-table-img {
     width: 100%;
   }
 }
 
 @media (max-width: 992px) {
-  .services-1 {
+  .sg-services-1 {
   
     .sg-form__item {
       min-width: 100%;

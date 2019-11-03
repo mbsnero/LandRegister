@@ -1,10 +1,10 @@
-$('.title-block__btn, .title-block__text').on('click', function(event) {
+$('.sg-title-block__btn, .sg-title-block__text').on('click', function(event) {
     
-  if ($(event.target).hasClass('title-block__btn')) {
-    $(this).toggleClass('animated');
-  } else if ($(event.target).hasClass('title-block__text')) {
-    $(this).next().toggleClass('animated');
+  if ($(event.target).hasClass('sg-title-block__btn')) {
+    $(this).toggleClass('sg-animated');
+  } else if ($(event.target).hasClass('sg-title-block__text')) {
+    $(this).next().toggleClass('sg-animated');
   }
 
-  $(event.target).parent('.title-block').next().slideToggle();
+  $(event.target).parent('.sg-title-block').next().slideToggle();
 })
