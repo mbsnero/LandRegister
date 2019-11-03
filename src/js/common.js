@@ -7,5 +7,5 @@
 //= carousel.js
 
 $(document).ready(function() {
-  
+   
 });
