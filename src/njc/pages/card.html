@@ -28,30 +28,30 @@
       <span class="hamburger__label">Открыть меню</span>
     </button>
   </div>
-  <div class="menu__item">
+  <a href="#" class="menu__item">
     <div class="menu__item-img">
       <img src="images/reestr.svg" alt="">
     </div>
     <div>
-      <a class="menu__link" href="#">Реестр земельных <br> участков</a>
+      <p class="menu__link" href="#">Реестр земельных <br> участков</p>
     </div>
-  </div>
-  <div class="menu__item">
+  </a>
+  <a href="#" class="menu__item">
     <div class="menu__item-img">
       <img src="images/process.svg" alt="">
     </div>
     <div>
-      <a class="menu__link" href="#">Процесс</a>
+      <p class="menu__link" href="#">Процесс</p>
     </div>
-  </div>
-  <div class="menu__item">
+  </a>
+  <a href="#" class="menu__item">
     <div class="menu__item-img">
       <img src="images/otchet.svg" alt="">
     </div>
     <div>
-      <a class="menu__link" href="#">Отчётность</a>
+      <p class="menu__link" href="#">Отчётность</p>
     </div>
-  </div>
+  </a>
 </nav>
 <section class="main-container">
   <div class="card main-block">
@@ -73,18 +73,18 @@
         </div>
         <div class="header-form__item">
           <label class="label" for="">Кадастровый номер</label>
-          <input class="input" type="text">
+          <input class="input input--required" type="text">
         </div>
         <div class="header-form__item header-form__item--long">
           <label class="label" for="">Местоположение</label>
-          <input class="input" type="text">
+          <input class="input input--required" type="text">
         </div>
         <div class="header-form__item header-form__item--adress">
           <label class="label">Адрес</label>
-          <input class="input" type="text" placeholder="Район">
-          <input class="input" type="text" placeholder="Населённый пункт">
-          <input class="input" type="text" placeholder="Улица">
-          <input class="input" type="text" placeholder="Дом">
+          <input class="input input--required" type="text" placeholder="Район">
+          <input class="input input--required" type="text" placeholder="Населённый пункт">
+          <input class="input input--required" type="text" placeholder="Улица">
+          <input class="input input--required" type="text" placeholder="Дом">
         </div>
       </form>
       <div id="tabs">
@@ -217,7 +217,7 @@
       <div class="limit">
         <div class="limit__item">
           <label class="label-select">
-            <span class="label-select__hint">Вид ограничения</span>
+            <span class="label-select__hint">Ви д ограничения</span>
             <select class="menu__select select" name="place">
               <option></option>
               <option value="place_1">Участок 1</option>
@@ -282,6 +282,12 @@
           <div class="com__textarea">
             <label class="label">Описание</label>
             <textarea class="textarea" id="" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+        <div class="com__row">
+          <div class="com__textarea">
+            <label class="label">Описание</label>
+            <textarea class="textarea textarea--required" id="" cols="30" rows="10"></textarea>
           </div>
         </div>
         <div class="bot-btn">
