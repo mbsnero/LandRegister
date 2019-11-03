@@ -6,43 +6,76 @@
 
 {# Вставляем контент шаблонов #}
 {% block content %}
-<nav class="menu js-menu js-menu--activated">
-  <div class="menu__container">
-    <div class="menu__select-box">
-      <select id="select_profile" class="menu__select select" name="state">
+<nav class="sg-menu sg-js-menu sg-js-menu--activated">
+  <div class="sg-menu__container">
+    <div class="sg-menu__select-box">
+      <select id="select_profile" class="sg-menu__select select" name="state">
         <option></option>
         <option value="value_1">Профиль 1</option>
         <option value="value_2">Профиль 2</option>
       </select>
     </div>
-    <button class="button hamburger" type="button">
-      <span class="hamburger__label">Открыть меню</span>
+    <button class="sg-button sg-hamburger" type="button">
+      <span class="sg-hamburger__label">Открыть меню</span>
     </button>
   </div>
-  <div class="menu__item">
-    <div class="menu__item-img">
+  <div class="sg-menu__item">
+    <div class="sg-menu__item-img">
       <img src="images/reestr.svg" alt="">
     </div>
     <div>
-      <a class="menu__link" href="#">Реестр земельных <br> участков</a>
+      <a class="sg-menu__link" href="#">Реестр земельных <br> участков</a>
     </div>
   </div>
-  <div class="menu__item">
-    <div class="menu__item-img">
+  <div class="sg-menu__item">
+    <div class="sg-menu__item-img">
       <img src="images/process.svg" alt="">
     </div>
     <div>
-      <a class="menu__link" href="#">Процесс</a>
+      <a class="sg-menu__link" href="#">Процесс</a>
     </div>
   </div>
-  <div class="menu__item">
-    <div class="menu__item-img">
+  <div class="sg-menu__item">
+    <div class="sg-menu__item-img">
       <img src="images/otchet.svg" alt="">
     </div>
     <div>
-      <a class="menu__link" href="#">Отчётность</a>
+      <a class="sg-menu__link" href="#">Отчётность</a>
     </div>
   </div>
 </nav>
+<main class="sg-main">
+<div class="sg-main__slider">
+  <div class="sg-slideshow-container">
+    <div id="mainSlider" class="">
+      <div>
+        <a href="#">
+          <img src="https://placeimg.com/460/306/tech/sepia" alt="">
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img class="lazy" src="https://placeimg.com/460/306/animals" alt="">
+        </a>
+      </div>
+        <div>
+        <a href="#">
+          <img class="lazy" src="https://placeimg.com/460/306/tech" alt="">
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img class="lazy" src="https://placeimg.com/460/306/people" alt="">
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img class="lazy" src="https://placeimg.com/460/306/arch" alt="">
+        </a>
+      </div>
+    </div> 
+  </div>
+</div>
+</main>
   
 {% endblock %}

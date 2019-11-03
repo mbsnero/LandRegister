@@ -4,6 +4,7 @@
 //= select.js
 //= tabs.js
 //= card-acc.js
+//= carousel.js
 
 $(document).ready(function() {
   
