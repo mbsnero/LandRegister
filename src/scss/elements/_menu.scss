@@ -1,6 +1,6 @@
 @import "../variables";
 
-.menu {
+.sg-menu {
   width: 100px;
   overflow-x: hidden;
   font-family: 'Helvetica';
@@ -16,14 +16,14 @@
   width: 90%;
 }
 
-.menu__select {
+.sg-menu__select {
   font-size: 15px;
   font-weight: 500;
   color: $black;
   width: 100%;
 }
 
-.menu__item {
+.sg-menu__item {
   display: block;
   margin: 20px;
   margin-left: 0;
@@ -32,12 +32,12 @@
   font-size: 14px;
 }
 
-.menu__item-img {
+.sg-menu__item-img {
   min-width: 40px;
   margin-right: 20px;
 }
 
-.menu__link {
+.sg-menu__link {
   visibility: hidden;
 }
 
@@ -46,7 +46,7 @@
 }
 
 @media (max-width: 768px) {
-  .menu {
+  .sg-menu {
     min-width: 100%;
   }
 
