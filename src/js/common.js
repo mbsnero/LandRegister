@@ -5,6 +5,7 @@
 //= tabs.js
 //= card-acc.js
 //= carousel.js
+//= tooltip.js
 
 $(document).ready(function() {
    
