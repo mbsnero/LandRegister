@@ -1,10 +1,9 @@
 @import "../variables";
 
-.input {
+.sg-input {
   box-sizing: border-box;
   font-size: 14px;
-  padding: 0 13px;
-  padding-top: 8px;
+  padding: 8px 13px 0;
   width: 100%;
   height: 50px;
   background-color: white;
@@ -21,7 +20,7 @@
   }
 }
 
-.input--required {
+.sg-input--required {
   &:focus {
     border: 2px solid $inputBorderFocusRequired;
     padding-top: 8px;

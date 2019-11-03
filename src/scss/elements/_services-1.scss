@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: space-between;
 
-    .form__item {
+    .sg-form__item {
       position: relative;
       margin: auto 0;
       margin-top: 15px;
@@ -24,7 +24,7 @@
     }
   }
 
-  .btn-block {
+  .sg-btn-block {
     width: 100%;
     padding: 20px 0;
     display: flex;
@@ -40,15 +40,15 @@
 @media (max-width: 992px) {
   .services-1 {
   
-    .form__item {
+    .sg-form__item {
       min-width: 100%;
     }
 
-    .left-block {
+    .sg-left-block {
       width: 100%;
     }
 
-    .paginator {
+    .sg-paginator {
       width: 100%;
     }
   }

@@ -7,7 +7,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    .form__item {
+    .sg-form__item {
       margin-bottom: 15px;
       width: 48.5%;
       position: relative;
@@ -34,7 +34,7 @@
     }
   }
 
-  .btn {
+  .sg-btn {
     margin-right: 15px!important;
     margin-bottom: 15px;
   }
@@ -42,7 +42,7 @@
 
 @media (max-width: 992px) {
   .services-card {
-    .form__item {
+    .sg-form__item {
       min-width: 100%;
     }
   }
@@ -53,7 +53,7 @@
     .form__item--double {
       flex-wrap: wrap;
   
-      .input {
+      .sg-input {
         width: 100%;
         margin-bottom: 15px;
       }

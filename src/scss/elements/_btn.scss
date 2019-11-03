@@ -1,6 +1,6 @@
 @import "../variables";
 
-.btn {
+.sg-btn {
   background-color: $btn;
   color: $white;
   border: none;
@@ -22,7 +22,7 @@
   }
 }
 
-.btn--noactive {
+.sg-btn--noactive {
   background-color: $gray;
   color: $black;
 
@@ -33,7 +33,7 @@
 
 @media (max-width: 768px) {
 
-  .btn {
+  .sg-btn {
     width: 100%;
     margin-bottom: 15px;
   }

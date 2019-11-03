@@ -51,21 +51,21 @@
     </div>
   </a>
 </nav>
-  <section class="main-container">
+  <section class="sg-main-container">
     <section class="main-block index">
       <div class="page-title page-title--btn">
         <h1 class="title-text">
           Реестр земельных участков
         </h1>
         <div class="title-btn">
-          <button class="btn">Загрузить файл</button>
-          <button class="btn">Добавить</button>
+          <button class="sg-btn">Загрузить файл</button>
+          <button class="sg-btn">Добавить</button>
         </div>
       </div>
       <div class="form-block">
-        <form class="form-block__container">
-          <div class="form__item item1">
-            <div id="form1" class="item__container">
+        <form class="sg-form-block__container">
+          <div class="sg-form__item sg-item1">
+            <div id="sg-form1" class="sg-item__container">
               <label class="label-select">
                 <span class="label-select__hint">Статус</span>
                 <select id="select_status" class="sg-menu__select select" name="status">
@@ -76,37 +76,37 @@
               </label>
             </div>
           </div>
-          <div class="form__item item2">
-            <div id="form2" class="item__container">
+          <div class="sg-form__item sg-item2">
+            <div id="sg-form2" class="sg-item__container">
               <label class="label" for="">Адрес</label>
-              <input class="input" type="text" placeholder="Район">
-              <input class="input" type="text" placeholder="Населённый пункт">
-              <input class="input" type="text" placeholder="Улица">
-              <input class="input" type="text" placeholder="Дом">
+              <input class="sg-input" type="text" placeholder="Район">
+              <input class="sg-input" type="text" placeholder="Населённый пункт">
+              <input class="sg-input" type="text" placeholder="Улица">
+              <input class="sg-input" type="text" placeholder="Дом">
             </div>
           </div>
-          <div class="form__item item4">
-            <div id="form4" class="item__container">
+          <div class="sg-form__item sg-item4">
+            <div id="form4" class="sg-item__container">
               <label class="label" for="">Кадастровый номер</label>
-              <input class="input input--required" type="text">
+              <input class="sg-input sg-input--required" type="text">
             </div>
           </div>
-          <div class="form__item item5">
-            <div id="form5" class="item__container">
+          <div class="sg-form__item sg-item5">
+            <div id="sg-form5" class="sg-item__container">
               <label class="label" for="">Кадастровая стоимость</label>
-              <input class="input" type="text" placeholder="От">
-              <input class="input" type="text" placeholder="До">
+              <input class="sg-input" type="text" placeholder="От">
+              <input class="sg-input" type="text" placeholder="До">
             </div>
           </div>
-          <div class="form__item item6">
-            <div id="form5" class="item__container">
+          <div class="sg-form__item sg-item6">
+            <div id="sg-form5" class="sg-item__container">
               <label class="label" for="">Площадь</label>
-              <input class="input input--required" type="text" placeholder="От">
-              <input class="input input--required" type="text" placeholder="До">
+              <input class="sg-input sg-input--required" type="text" placeholder="От">
+              <input class="sg-input sg-input--required" type="text" placeholder="До">
             </div>
           </div>
-          <div class="form__item item1">
-            <div id="form1" class="item__container">
+          <div class="sg-form__item sg-item1">
+            <div id="sg-form1" class="sg-item__container">
               <label class="label-select">
                 <span class="label-select__hint">Категория земли</span>
                 <select class="sg-menu__select select" name="category">
@@ -117,8 +117,8 @@
               </label>
             </div>
           </div>
-          <div class="form__item item6">
-            <div id="form6" class="item__container">
+          <div class="sg-form__item sg-item6">
+            <div id="form6" class="sg-item__container">
               <label class="label-select">
                 <span class="label-select__hint">Разрешенное использование минэконом</span>
                 <select class="sg-menu__select select" name="category">
@@ -129,8 +129,8 @@
               </label>
             </div>
           </div>
-          <div class="form__item item6">
-            <div id="form6" class="item__container">
+          <div class="sg-form__item sg-item6">
+            <div id="form6" class="sg-item__container">
               <label class="label-select">
                 <span class="label-select__hint">Разрешенное использование Росреестр</span>
                 <select class="sg-menu__select select" name="category">
@@ -141,8 +141,8 @@
               </label>
             </div>
           </div>
-          <div class="form__item item3">
-            <div id="form3" class="item__container">
+          <div class="sg-form__item sg-item3">
+            <div id="form3" class="sg-item__container">
               <label class="toggle toggle--checkbox">
 							  <input class="toggle__input" name="in-work" type="checkbox" checked="">
 							  <span class="toggle__label">В работе</span>
@@ -151,12 +151,12 @@
           </div>
         </form>
 
-        <div class="btn-block">
-            <div class="left-block">
-              <button class="btn">Принять</button>
-              <button class="btn">Сбросить</button>
+        <div class="sg-btn-block">
+            <div class="sg-left-block">
+              <button class="sg-btn">Принять</button>
+              <button class="sg-btn">Сбросить</button>
             </div>
-            <div class="paginator">
+            <div class="sg-paginator">
               <div class="paginator__item paginator__item--active">
                 <p>1</p>
               </div>
@@ -185,7 +185,7 @@
           </div>
       </div>
       
-      <div class="table">
+      <div class="sg-table">
           <table>
             <tr>
               <th>№</th>
@@ -208,9 +208,9 @@
               <td>1021</td>
               <td>Земли населённых пунктов</td>
               <td>
-                <img class="table__btn" src="images/reestr-activate.svg" alt="">
-                <img class="table__btn" src="images/reestr-prosmotr.png" alt="">
-                <img class="table__btn" src="images/reestr-delete.svg" alt="">
+                <img class="sg-table__btn" src="images/reestr-activate.svg" alt="">
+                <img class="sg-table__btn" src="images/reestr-prosmotr.png" alt="">
+                <img class="sg-table__btn" src="images/reestr-delete.svg" alt="">
               </td>
             </tr>
             <tr>
@@ -224,9 +224,9 @@
               <td>1021</td>
               <td>Земли населённых пунктов</td>
               <td>
-                <img class="table__btn" src="images/reestr-activate.svg" alt="">
-                <img class="table__btn" src="images/reestr-prosmotr.png" alt="">
-                <img class="table__btn" src="images/reestr-delete.svg" alt="">
+                <img class="sg-table__btn" src="images/reestr-activate.svg" alt="">
+                <img class="sg-table__btn" src="images/reestr-prosmotr.png" alt="">
+                <img class="sg-table__btn" src="images/reestr-delete.svg" alt="">
               </td>
             </tr>
             <tr>
@@ -240,9 +240,9 @@
               <td>1021</td>
               <td>Земли населённых пунктов</td>
               <td>
-                <img class="table__btn" src="images/reestr-activate.svg" alt="">
-                <img class="table__btn" src="images/reestr-prosmotr.png" alt="">
-                <img class="table__btn" src="images/reestr-delete.svg" alt="">
+                <img class="sg-table__btn" src="images/reestr-activate.svg" alt="">
+                <img class="sg-table__btn" src="images/reestr-prosmotr.png" alt="">
+                <img class="sg-table__btn" src="images/reestr-delete.svg" alt="">
               </td>
             </tr>
             <tr>
@@ -256,9 +256,9 @@
               <td>1021</td>
               <td>Земли населённых пунктов</td>
               <td>
-                <img class="table__btn" src="images/reestr-activate.svg" alt="">
-                <img class="table__btn" src="images/reestr-prosmotr.png" alt="">
-                <img class="table__btn" src="images/reestr-delete.svg" alt="">
+                <img class="sg-table__btn" src="images/reestr-activate.svg" alt="">
+                <img class="sg-table__btn" src="images/reestr-prosmotr.png" alt="">
+                <img class="sg-table__btn" src="images/reestr-delete.svg" alt="">
               </td>
             </tr>
             <tr>
@@ -272,9 +272,9 @@
               <td>1021</td>
               <td>Земли населённых пунктов</td>
               <td>
-                <img class="table__btn" src="images/reestr-activate.svg" alt="">
-                <img class="table__btn" src="images/reestr-prosmotr.png" alt="">
-                <img class="table__btn" src="images/reestr-delete.svg" alt="">
+                <img class="sg-table__btn" src="images/reestr-activate.svg" alt="">
+                <img class="sg-table__btn" src="images/reestr-prosmotr.png" alt="">
+                <img class="sg-table__btn" src="images/reestr-delete.svg" alt="">
               </td>
             </tr>
             <tr>
@@ -288,9 +288,9 @@
               <td>1021</td>
               <td>Земли населённых пунктов</td>
               <td>
-                <img class="table__btn" src="images/reestr-activate.svg" alt="">
-                <img class="table__btn" src="images/reestr-prosmotr.png" alt="">
-                <img class="table__btn" src="images/reestr-delete.svg" alt="">
+                <img class="sg-table__btn" src="images/reestr-activate.svg" alt="">
+                <img class="sg-table__btn" src="images/reestr-prosmotr.png" alt="">
+                <img class="sg-table__btn" src="images/reestr-delete.svg" alt="">
               </td>
             </tr>
             <tr>
@@ -304,9 +304,9 @@
               <td>1021</td>
               <td>Земли населённых пунктов</td>
               <td>
-                <img class="table__btn" src="images/reestr-activate.svg" alt="">
-                <img class="table__btn" src="images/reestr-prosmotr.png" alt="">
-                <img class="table__btn" src="images/reestr-delete.svg" alt="">
+                <img class="sg-table__btn" src="images/reestr-activate.svg" alt="">
+                <img class="sg-table__btn" src="images/reestr-prosmotr.png" alt="">
+                <img class="sg-table__btn" src="images/reestr-delete.svg" alt="">
               </td>
             </tr>
           </table>

@@ -25,13 +25,13 @@
         width: 100%;
       }
 
-      .input {
+      .sg-input {
         width: 50%;
       }
     }
   }
 
-  .btn-block {
+  .sg-btn-block {
     width: 100%;
     padding: 20px 0;
     display: flex;
@@ -49,17 +49,17 @@
 @media (max-width: 992px) {
   .services-2 {
   
-    .form__item {
+    .sg-form__item {
       min-width: 100%;
       margin-top: 15px;
     }
 
-    .left-block {
+    .sg-left-block {
       width: 100%;
       margin-bottom: 20px;
     }
 
-    .paginator {
+    .sg-paginator {
       width: 100%;
     }
   }
