@@ -1,7 +1,3 @@
-//= ../../node_modules/popper.js/dist/umd/popper.min.js
-//= ../../node_modules/tippy.js/dist/tippy.iife.min.js
-
-
 var tooltipElement = document.querySelector('.tooltip');
   tippy(tooltipElement, {
     arrow: true,
