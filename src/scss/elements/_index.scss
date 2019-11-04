@@ -1,13 +1,13 @@
 @import "../variables";
 
-.form-block__container {
+.sg-form-block__container {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   flex-wrap: wrap;
 }
 
-.item__container {
+.sg-item__container {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -16,45 +16,45 @@
   margin-bottom: 15px;
 }
 
-#form1 .select {
+#sg-form1 .sg-select {
   width: 100%;
 }
 
-.item1 {
+.sg-item1 {
   width: 20%;
 }
 
-#form2 .input {
+#sg-form2 .sg-input {
   width: 25%;
 }
 
-.item2 {
+.sg-item2 {
   width: 77.5%;
 }
 
-.item3 {
+.sg-item3 {
   align-self: center;
   width: 15%;
   margin-top: 15px;
 }
 
-.item4 {
+.sg-item4 {
   width: 20%;
 }
 
-.item5 {
+.sg-item5 {
   width: 37.5%;
 }
 
-#form5 .input {
+#sg-form5 .sg-input {
   width: 50%;
 }
 
-.item6 {
+.sg-item6 {
   width: 37.5%;
 }
 
-.btn-block {
+.sg-btn-block {
   width: 100%;
   padding: 20px 0;
   display: flex;
@@ -62,7 +62,7 @@
   flex-wrap: wrap;
 }
 
-.table__btn {
+.sg-table__btn {
   width: 20px;
   
   &:hover {
@@ -88,63 +88,57 @@ th:nth-child(8) {
 
 @media (max-width: 992px) {
 
-  .paginator {
+  .sg-paginator {
     width: 100%;
   }
 
-  .table {
+  .sg-table {
     overflow-y: scroll;
     width: 100%;
   }
 
-  .main-block__top-block {
+  .sg-main-block__top-block {
     flex-direction: column;
     width: 100%;
   }
 
-  .main-title-block h1 {
-    font-size: 32px;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  #form2 .input {
+  #sg-form2 .sg-input {
     width:50%;
     margin-bottom: 10px;
   }
 
-  .form__item {
+  .sg-form__item {
     width: 100%;
   }
 }
 
 @media all and (max-width: 768px) {
 
-  #form2 .input {
+  #sg-form2 .sg-input {
     width:50%;
     margin-bottom: 10px;
   }
 
-  .form__item {
+  .sg-form__item {
     width: 100%;
   }
 
-  .left-block {
+  .sg-left-block {
     width: 100%;
   }
 }
 
 @media (max-width: 576px) {
 
-  .form__container {
+  .sg-form__container {
     flex-wrap: wrap;
   }
 
-  .form__item {
+  .sg-form__item {
     width: 100%;
   }
 
-  #form2 .input {
+  #sg-form2 .sg-input {
     width:100%;
     margin-bottom: 15px;
   }

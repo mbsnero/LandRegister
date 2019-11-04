@@ -1,6 +1,6 @@
 @import "../variables";
 
-.table {
+.sg-table {
   font-size: 14px;
   font-family: Helvetica;
   width: 100%;
@@ -29,38 +29,38 @@ td {
   padding-right: 20px;
 }
 
-.table-img-container {
+.sg-table-img-container {
   width: 18px;
   height: 18px;
   margin: 5px;
   border-radius: 3px;
 }
 
-.table-img-container img {
+.sg-table-img-container img {
   display: block;
   width: 18px;
 }
 
-.ti-1 {
+.sg-ti-1 {
   background-color: $tableBlue;
 }
 
-.ti-2 {
+.sg-ti-2 {
   background-color: $tableRed;
 }
 
-.ti-2 img {
+.sg-ti-2 img {
   width: 15px;
   margin-left: 2px;
   position: relative;
   top: 1px;
 }
 
-.ti-3 {
+.sg-ti-3 {
   background-color: table-green;
 }
 
-.marker-free {
+.sg-marker-free {
   display: inline-block;
   width: 6px;
   height: 6px;
@@ -72,14 +72,14 @@ td {
   top: 51px;
 }
 
-.marker-noactive {
+.sg-marker-noactive {
   background-color: #C4C4C4;
 }
 
-.marker-register {
+.sg-marker-register {
   background-color: red;
 }
 
-.marker-buying {
+.sg-marker-buying {
   background-color: black;
 }

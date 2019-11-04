@@ -1,59 +1,59 @@
 @import "../variables";
 
-.services-card {
+.sg-services-card {
   
-  .form {
+  .sg-sg-form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    .form__item {
+    .sg-form__item {
       margin-bottom: 15px;
       width: 48.5%;
       position: relative;
     }
 
-    .form__item--alone {
+    .sg-form__item--alone {
       margin-right: 50px;
     }
 
-    .form__item--area {
+    .sg-form__item--area {
       width: 100%;
     }
 
-    .form__item--double {
+    .sg-form__item--double {
       display: flex;
     }
 
-    .form__item--checkbox {
+    .sg-form__item--checkbox {
       padding: 15px 10px;
     }
 
-    .form__item--small {
+    .sg-form__item--small {
       width: 30%;
     }
   }
 
-  .btn {
+  .sg-btn {
     margin-right: 15px!important;
     margin-bottom: 15px;
   }
 }
 
 @media (max-width: 992px) {
-  .services-card {
-    .form__item {
+  .sg-services-card {
+    .sg-form__item {
       min-width: 100%;
     }
   }
 }
 
 @media (max-width: 576px) {
-  .services-card {
-    .form__item--double {
+  .sg-services-card {
+    .sg-form__item--double {
       flex-wrap: wrap;
   
-      .input {
+      .sg-input {
         width: 100%;
         margin-bottom: 15px;
       }

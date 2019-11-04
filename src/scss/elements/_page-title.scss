@@ -1,8 +1,8 @@
 @import "../variables";
 
-.page-title {
+.sg-page-title {
 
-  .title-text {
+  .sg-title-text {
     font-family: Ekibastuz;
     font-weight: 100;
     margin: 0;
@@ -12,14 +12,14 @@
   }
 }
 
-.page-title--btn {
+.sg-page-title--btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  .title-btn {
+  .sg-title-btn {
     display: flex;
-    .btn {
+    .sg-btn {
       display: inline-block;
       margin-left: 20px;
     }
@@ -27,14 +27,14 @@
 }
 
 @media all and (max-width: 768px) {
-  .page-title--btn {
+  .sg-page-title--btn {
     flex-wrap: wrap;
   
-    .title-btn {
+    .sg-title-btn {
       margin-top: 15px;
       width: 100%;
       flex-wrap: wrap;
-      .btn {
+      .sg-btn {
         margin-left: 0;
       }
     }

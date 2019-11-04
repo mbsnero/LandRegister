@@ -1,30 +1,30 @@
 @import "../variables";
 
-.services-1 {
+.sg-services-1 {
 
-  .form {
+  .sg-sg-form {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 
-    .form__item {
+    .sg-form__item {
       position: relative;
       margin: auto 0;
       margin-top: 15px;
       width: 48%;
     }
 
-    .form__item--checkbox {
+    .sg-form__item--checkbox {
       padding: 15px 0;
     }
 
-    .form__item--double {
+    .sg-form__item--double {
       display: flex;
     }
   }
 
-  .btn-block {
+  .sg-btn-block {
     width: 100%;
     padding: 20px 0;
     display: flex;
@@ -32,23 +32,23 @@
     flex-wrap: wrap;
   }
 
-  .table-img {
+  .sg-table-img {
     width: 100%;
   }
 }
 
 @media (max-width: 992px) {
-  .services-1 {
+  .sg-services-1 {
   
-    .form__item {
+    .sg-form__item {
       min-width: 100%;
     }
 
-    .left-block {
+    .sg-left-block {
       width: 100%;
     }
 
-    .paginator {
+    .sg-paginator {
       width: 100%;
     }
   }

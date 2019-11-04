@@ -1,6 +1,6 @@
 @import "../variables";
 
-.title-block {
+.sg-title-block {
 
   border-bottom: 1px solid $titleBorder;
   margin-top: 20px;
@@ -8,13 +8,13 @@
   padding-bottom: 7px;
   cursor: pointer;
 
-  .title-block__text {
+  .sg-title-block__text {
     display: inline-block;
     font-size: 22px;
     margin: 0;
   }
 
-  .title-block__btn {
+  .sg-title-block__btn {
     display: inline-block;
     width: 16px;
     position: relative;
@@ -29,14 +29,11 @@
     transform: rotate(0);
   }
 
-  .animated {
+  .sg-animated {
     -o-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
-  }
-
-  .not-animated {
   }
 }

@@ -1,13 +1,13 @@
 @import "../variables";
 
-.header {
+.sg-header {
   background-color: $white;
   font-family: 'Helvetica';
   width: 100%;
   box-shadow: 0 3px 2px rgba(0,0,0,.1);
 }
 
-.header__container {
+.sg-header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,21 +18,21 @@
   margin-right: auto;
 }
 
-.header__logo {
+.sg-header__logo {
   display: inline-block;
   vertical-align: middle;
   width: 195px;
   margin-right: 10px;
 }
 
-.header__user {
+.sg-header__user {
   display: inline-block;
   vertical-align: middle;
   font-size: 15px;
   margin: 0;
 }
 
-.header__link {
+.sg-header__link {
   color: $navFont;
 
   &:hover, &:focus {

@@ -1,37 +1,37 @@
 @import "../variables";
 
-.services-2 {
+.sg-services-2 {
 
-  .form {
+  .sg-sg-form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-    .form__item--status {
+    .sg-form__item--status {
       width: 20%;
     }
 
-    .form__item--type {
+    .sg-form__item--type {
       width: 37%;
     }
 
-    .form__item--price {
+    .sg-form__item--price {
       width: 37%;
       display: flex;
       flex-wrap: wrap;
       position: relative;
 
-      .label {
+      .sg-label {
         width: 100%;
       }
 
-      .input {
+      .sg-input {
         width: 50%;
       }
     }
   }
 
-  .btn-block {
+  .sg-btn-block {
     width: 100%;
     padding: 20px 0;
     display: flex;
@@ -40,26 +40,26 @@
 
   }
 
-  .table-img {
+  .sg-table-img {
     width: 100%;
   }
 
 }
 
 @media (max-width: 992px) {
-  .services-2 {
+  .sg-services-2 {
   
-    .form__item {
+    .sg-form__item {
       min-width: 100%;
       margin-top: 15px;
     }
 
-    .left-block {
+    .sg-left-block {
       width: 100%;
       margin-bottom: 20px;
     }
 
-    .paginator {
+    .sg-paginator {
       width: 100%;
     }
   }

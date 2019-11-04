@@ -12,130 +12,130 @@
 {% extends "src/njc/layout.njc" %}
 {% block content %}
 
-<nav class="menu js-menu js-menu--activated">
-  <div class="menu__container">
-    <div class="menu__select-box">
-      <select id="select_profile" class="menu__select select" name="state">
+<nav class="sg-menu sg-js-menu sg-js-menu--activated">
+  <div class="sg-menu__container">
+    <div class="sg-menu__select-box">
+      <select id="select_profile" class="sg-menu__select sg-select" name="state">
         <option></option>
         <option value="value_1">Профиль 1</option>
         <option value="value_2">Профиль 2</option>
       </select>
     </div>
-    <button class="button hamburger" type="button">
-        <span class="hamburger__label">Открыть меню</span>
+    <button class="sg-button sg-hamburger" type="button">
+        <span class="sg-hamburger__label">Открыть меню</span>
     </button>
   </div>
-  <a href="#" class="menu__item">
-    <div class="menu__item-img">
+  <a href="#" class="sg-menu__item">
+    <div class="sg-menu__item-img">
       <img src="images/in-work.svg" alt="">
     </div>  
     <div>
-      <p class="menu__link" href="#">В работе</p>
+      <p class="sg-menu__link" href="#">В работе</p>
     </div>
   </a>
-  <a href="#" class="menu__item">
-    <div class="menu__item-img">
+  <a href="#" class="sg-menu__item">
+    <div class="sg-menu__item-img">
       <img src="images/zeml.svg" alt="">
     </div>
     <div>
-      <p class="menu__link" href="#">Избранные земельные участки</p>
+      <p class="sg-menu__link" href="#">Избранные земельные участки</p>
     </div>
   </a>
-  <a href="#" class="menu__item">
-    <div class="menu__item-img">
+  <a href="#" class="sg-menu__item">
+    <div class="sg-menu__item-img">
       <img src="images/history.svg" alt="">
     </div>
     <div>
-      <p class="menu__link" href="#">История</p>
+      <p class="sg-menu__link" href="#">История</p>
     </div>
   </a>
-  <a href="#" class="menu__item">
-    <div class="menu__item-img">
+  <a href="#" class="sg-menu__item">
+    <div class="sg-menu__item-img">
       <img src="images/search.svg" alt="">
     </div>
     <div>
-      <p class="menu__link" href="#">Критерии поиска</p>
+      <p class="sg-menu__link" href="#">Критерии поиска</p>
     </div>
   </a>
-  <a href="#" class="menu__item">
-    <div class="menu__item-img">
+  <a href="#" class="sg-menu__item">
+    <div class="sg-menu__item-img">
       <img src="images/services.svg" alt="">
     </div>
     <div>
-      <p class="menu__link" href="#">Избранные сопутствующие услуги</p>
+      <p class="sg-menu__link" href="#">Избранные сопутствующие услуги</p>
     </div>
   </a>
 </nav>
 
-<section class="main-container">
-  <div class="main-block services-1">
-    <div class="page-title">
-      <h1 class="title-text">
+<section class="sg-main-container">
+  <div class="main-block sg-services-1">
+    <div class="sg-page-title">
+      <h1 class="sg-title-text">
         Реестр услуг
       </h1>
     </div>
 
-    <div class="form">
-      <div class="form__item">
-        <label class="label">Наименование организации</label>
-        <input class="input" type="text" placeholder="">
+    <div class="sg-sg-form">
+      <div class="sg-form__item">
+        <label class="sg-label">Наименование организации</label>
+        <input class="sg-input" type="text" placeholder="">
       </div>
-      <div class="form__item form__item--checkbox">
+      <div class="sg-form__item sg-form__item--checkbox">
         <label class="toggle toggle--checkbox">
           <input class="toggle__input" name="in-work" type="checkbox">
           <span class="toggle__label">Избранные</span>
         </label>
       </div>
-      <div class="form__item">
-        <label class="label-select">
-          <span class="label-select__hint">Вид услуги</span>
-          <select class="menu__select select" name="places">
+      <div class="sg-form__item">
+        <label class="sg-label-select">
+          <span class="sg-label-select__hint">Вид услуги</span>
+          <select class="sg-menu__select sg-select" name="places">
             <option></option>
             <option value="place_1">Услуга 1</option>
             <option value="place_2">Услуга 2</option>
           </select>
         </label>
       </div>
-      <div class="form__item form__item--double">
-        <label class="label">Стоимость</label>
-        <input class="input" type="text" placeholder="От">
-        <input class="input" type="text" placeholder="До">
+      <div class="sg-form__item sg-form__item--double">
+        <label class="sg-label">Стоимость</label>
+        <input class="sg-input" type="text" placeholder="От">
+        <input class="sg-input" type="text" placeholder="До">
       </div>
     </div>
-    <div class="btn-block">
-        <div class="left-block">
-          <button class="btn">Принять</button>
-          <button class="btn">Сбросить</button>
+    <div class="sg-btn-block">
+        <div class="sg-left-block">
+          <button class="sg-btn">Принять</button>
+          <button class="sg-btn">Сбросить</button>
         </div>
-        <div class="paginator">
-          <div class="paginator__item paginator__item--active">
+        <div class="sg-paginator">
+          <div class="sg-paginator__item sg-paginator__item--active">
             <p>1</p>
           </div>
-          <div class="paginator__item">
+          <div class="sg-paginator__item">
             <p>2</p>
           </div>
-          <div class="paginator__item">
+          <div class="sg-paginator__item">
             <p>3</p>
           </div>
-          <div class="paginator__item">
+          <div class="sg-paginator__item">
             <p>4</p>
           </div>
-          <div class="paginator__item paginator__item--hidden">
+          <div class="sg-paginator__item sg-paginator__item--hidden">
             <p>...</p>
           </div>
-          <div class="paginator__item">
+          <div class="sg-paginator__item">
             <p>10</p>
           </div>
-          <div class="paginator__item">
+          <div class="sg-paginator__item">
             <p>11</p>
           </div>
-          <div class="paginator__item">
+          <div class="sg-paginator__item">
             <p>12</p>
           </div>
         </div>
       </div>
   
-      <img class="table-img" src="images/table-img.png" alt="">
+      <img class="sg-table-img" src="images/table-img.png" alt="">
   </div>
 </section>
 

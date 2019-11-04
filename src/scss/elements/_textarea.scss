@@ -1,6 +1,6 @@
 @import "../variables";
 
-.textarea {
+.sg-textarea {
   box-sizing: border-box;
   width: 100%;
   height: 100px;
@@ -19,7 +19,7 @@
   }
 }
 
-.textarea--required {
+.sg-textarea--required {
 
   &:focus {
     border: 2px solid $inputBorderFocusRequired;

@@ -15,56 +15,56 @@
 
 {% extends "src/njc/layout.njc" %}
 {% block content %}
-<nav class="menu js-menu js-menu--activated">
-  <div class="menu__container">
-    <div class="menu__select-box">
-      <select id="select_profile" class="menu__select select" name="state">
+<nav class="sg-menu sg-js-menu sg-js-menu--activated">
+  <div class="sg-menu__container">
+    <div class="sg-menu__select-box">
+      <select id="select_profile" class="sg-menu__select sg-select" name="state">
         <option></option>
         <option value="value_1">Профиль 1</option>
         <option value="value_2">Профиль 2</option>
       </select>
     </div>
-    <button class="button hamburger" type="button">
-      <span class="hamburger__label">Открыть меню</span>
+    <button class="sg-button sg-hamburger" type="button">
+      <span class="sg-hamburger__label">Открыть меню</span>
     </button>
   </div>
-  <a href="#" class="menu__item">
-    <div class="menu__item-img">
+  <a href="#" class="sg-menu__item">
+    <div class="sg-menu__item-img">
       <img src="images/reestr.svg" alt="">
     </div>
     <div>
-      <p class="menu__link" href="#">Реестр земельных <br> участков</p>
+      <p class="sg-menu__link" href="#">Реестр земельных <br> участков</p>
     </div>
   </a>
-  <a href="#" class="menu__item">
-    <div class="menu__item-img">
+  <a href="#" class="sg-menu__item">
+    <div class="sg-menu__item-img">
       <img src="images/process.svg" alt="">
     </div>
     <div>
-      <p class="menu__link" href="#">Процесс</p>
+      <p class="sg-menu__link" href="#">Процесс</p>
     </div>
   </a>
-  <a href="#" class="menu__item">
-    <div class="menu__item-img">
+  <a href="#" class="sg-menu__item">
+    <div class="sg-menu__item-img">
       <img src="images/otchet.svg" alt="">
     </div>
     <div>
-      <p class="menu__link" href="#">Отчётность</p>
+      <p class="sg-menu__link" href="#">Отчётность</p>
     </div>
   </a>
 </nav>
-<section class="main-container">
+<section class="sg-main-container">
   <div class="card main-block">
-    <div class="page-title">
-      <h1 class="title-text">
+    <div class="sg-page-title">
+      <h1 class="sg-title-text">
         Карточка земельных участков
       </h1>
     </div>
       <form class="header-form">
         <div class="header-form__item">
-          <label class="label-select">
-            <span class="label-select__hint">Статус</span>
-            <select id="select_status" class="menu__select select" name="status">
+          <label class="sg-label-select">
+            <span class="sg-label-select__hint">Статус</span>
+            <select id="select_status" class="sg-menu__select sg-select" name="status">
               <option></option>
               <option value="status_1">Статус 1</option>
               <option value="status_2">Статус 2</option>
@@ -72,38 +72,38 @@
           </label>
         </div>
         <div class="header-form__item">
-          <label class="label" for="">Кадастровый номер</label>
-          <input class="input input--required" type="text">
+          <label class="sg-label" for="">Кадастровый номер</label>
+          <input class="sg-input sg-input--required" type="text">
         </div>
         <div class="header-form__item header-form__item--long">
-          <label class="label" for="">Местоположение</label>
-          <input class="input input--required" type="text">
+          <label class="sg-label" for="">Местоположение</label>
+          <input class="sg-input sg-input--required" type="text">
         </div>
         <div class="header-form__item header-form__item--adress">
-          <label class="label">Адрес</label>
-          <input class="input input--required" type="text" placeholder="Район">
-          <input class="input input--required" type="text" placeholder="Населённый пункт">
-          <input class="input input--required" type="text" placeholder="Улица">
-          <input class="input input--required" type="text" placeholder="Дом">
+          <label class="sg-label">Адрес</label>
+          <input class="sg-input sg-input--required" type="text" placeholder="Район">
+          <input class="sg-input sg-input--required" type="text" placeholder="Населённый пункт">
+          <input class="sg-input sg-input--required" type="text" placeholder="Улица">
+          <input class="sg-input sg-input--required" type="text" placeholder="Дом">
         </div>
       </form>
       <div id="tabs">
-        <ul class="tabs">
-          <li><a class="tabs__link" href="#fragment-1"><span>Основная информация</span></a></li>
-          <li><a class="tabs__link" href="#fragment-2"><span>Процесс</span></a></li>
+        <ul class="sg-tabs">
+          <li><a class="sg-tabs__link" href="#fragment-1"><span>Основная информация</span></a></li>
+          <li><a class="sg-tabs__link" href="#fragment-2"><span>Процесс</span></a></li>
         </ul>
         <div id="fragment-1">
-           <div class="title-block">
-        <p class="title-block__text">Карта</p>
-        <img class="title-block__btn" src="images/accordion_arr_up_hov.svg" alt="">
+           <div class="sg-title-block">
+        <p class="sg-title-block__text">Карта</p>
+        <img class="sg-title-block__btn" src="images/accordion_arr_up_hov.svg" alt="">
       </div>
       <div class="map">
         <img class="map__img" src="images/map-img.png" alt="">
       </div>
 
-      <div class="title-block">
-        <p class="title-block__text">Основная информация</p>
-        <img class="title-block__btn" src="images/accordion_arr_up_hov.svg" alt="">
+      <div class="sg-title-block">
+        <p class="sg-title-block__text">Основная информация</p>
+        <img class="sg-title-block__btn" src="images/accordion_arr_up_hov.svg" alt="">
       </div>
       <div class="main-info">
         <div class="main-info__check">
@@ -149,17 +149,17 @@
 					</label>
         </div>
         <div class="main-info__item">
-          <label class="label" for="">Дата постановки на кадастровый учёт</label>
-          <input class="input" type="text">
+          <label class="sg-label" for="">Дата постановки на кадастровый учёт</label>
+          <input class="sg-input" type="text">
         </div>
         <div class="main-info__item">
-          <label class="label" for="">Площадь</label>
-          <input class="input" type="text">
+          <label class="sg-label" for="">Площадь</label>
+          <input class="sg-input" type="text">
         </div>
         <div class="main-info__item">
-          <label class="label-select">
-            <span class="label-select__hint">Наименование участка</span>
-            <select class="menu__select select" name="places">
+          <label class="sg-label-select">
+            <span class="sg-label-select__hint">Наименование участка</span>
+            <select class="sg-menu__select sg-select" name="places">
               <option></option>
               <option value="place_1">Участок 1</option>
               <option value="place_2">Участок 2</option>
@@ -167,9 +167,9 @@
           </label>
         </div>
         <div class="main-info__item">
-          <label class="label-select">
-            <span class="label-select__hint">Категория земель</span>
-            <select class="menu__select select" name="place">
+          <label class="sg-label-select">
+            <span class="sg-label-select__hint">Категория земель</span>
+            <select class="sg-menu__select sg-select" name="place">
               <option></option>
               <option value="place_1">Участок 1</option>
               <option value="place_2">Участок 2</option>
@@ -177,21 +177,21 @@
           </label>
         </div>
         <div class="main-info__item">
-          <label class="label" for="">Кадастровая стоимость</label>
-          <input class="input" type="text">
+          <label class="sg-label" for="">Кадастровая стоимость</label>
+          <input class="sg-input" type="text">
         </div>
         <div class="main-info__item">
-          <label class="label" for="">Первоначальный размер АП</label>
-          <input class="input" type="text">
+          <label class="sg-label" for="">Первоначальный размер АП</label>
+          <input class="sg-input" type="text">
         </div>
         <div class="main-info__item main-info__item--long">
-          <label class="label" for="">Первоначальный размер рыночной стоимости</label>
-          <input class="input" type="text">
+          <label class="sg-label" for="">Первоначальный размер рыночной стоимости</label>
+          <input class="sg-input" type="text">
         </div>
         <div class="main-info__item main-info__item--long">
-          <label class="label-select">
-            <span class="label-select__hint">Вид разрешённого использования минэкономразвития</span>
-            <select class="menu__select select" name="place">
+          <label class="sg-label-select">
+            <span class="sg-label-select__hint">Вид разрешённого использования минэкономразвития</span>
+            <select class="sg-menu__select sg-select" name="place">
               <option></option>
               <option value="place_1">Участок 1</option>
               <option value="place_2">Участок 2</option>
@@ -199,9 +199,9 @@
           </label>
         </div>
         <div class="main-info__item main-info__item--long">
-          <label class="label-select">
-            <span class="label-select__hint">Вид разрешенного использования Росреестр</span>
-            <select class="menu__select select" name="place">
+          <label class="sg-label-select">
+            <span class="sg-label-select__hint">Вид разрешенного использования Росреестр</span>
+            <select class="sg-menu__select sg-select" name="place">
               <option></option>
               <option value="place_1">Участок 1</option>
               <option value="place_2">Участок 2</option>
@@ -210,15 +210,15 @@
         </div>
       </div>
 
-      <div class="title-block">
-        <p class="title-block__text">Ограничения</p>
-        <img class="title-block__btn" src="images/accordion_arr_up_hov.svg" alt="">
+      <div class="sg-title-block">
+        <p class="sg-title-block__text">Ограничения</p>
+        <img class="sg-title-block__btn" src="images/accordion_arr_up_hov.svg" alt="">
       </div>
       <div class="limit">
         <div class="limit__item">
-          <label class="label-select">
-            <span class="label-select__hint">Ви д ограничения</span>
-            <select class="menu__select select" name="place">
+          <label class="sg-label-select">
+            <span class="sg-label-select__hint">Ви д ограничения</span>
+            <select class="sg-menu__select sg-select" name="place">
               <option></option>
               <option value="place_1">Участок 1</option>
               <option value="place_2">Участок 2</option>
@@ -226,26 +226,26 @@
           </label>
         </div>
         <div class="limit__item limit__item--long">
-          <label class="label" for="">Содержание</label>
-          <input class="input" type="text">
+          <label class="sg-label" for="">Содержание</label>
+          <input class="sg-input" type="text">
         </div>
         <div class="limit__item">
-          <label class="label" for="">Территориальная зона</label>
-          <input class="input" type="text">
+          <label class="sg-label" for="">Территориальная зона</label>
+          <input class="sg-input" type="text">
         </div>
-        <button class="btn">Добавить</button>
+        <button class="sg-btn">Добавить</button>
       </div>
 
-      <div class="title-block">
-        <p class="title-block__text">Коммуникации</p>
-        <img class="title-block__btn" src="images/accordion_arr_up_hov.svg" alt="">
+      <div class="sg-title-block">
+        <p class="sg-title-block__text">Коммуникации</p>
+        <img class="sg-title-block__btn" src="images/accordion_arr_up_hov.svg" alt="">
       </div>
       <div class="com">
         <p>Расстояние</p>
         <div class="com__row">
           <div class="com__input">
-            <label class="label" for="">Водопровод</label>
-            <input class="input" type="text">
+            <label class="sg-label" for="">Водопровод</label>
+            <input class="sg-input" type="text">
           </div>
           <div class="com__check">
             <label class="toggle toggle--checkbox">
@@ -256,8 +256,8 @@
         </div>
         <div class="com__row">
           <div class="com__input">
-            <label class="label" for="">Газопровод</label>
-            <input class="input" type="text">
+            <label class="sg-label" for="">Газопровод</label>
+            <input class="sg-input" type="text">
           </div>
           <div class="com__check">
             <label class="toggle toggle--checkbox">
@@ -268,8 +268,8 @@
         </div>
         <div class="com__row">
           <div class="com__input">
-            <label class="label" for="">Линии электропередач</label>
-            <input class="input" type="text">
+            <label class="sg-label" for="">Линии электропередач</label>
+            <input class="sg-input" type="text">
           </div>
           <div class="com__check">
             <label class="toggle toggle--checkbox">
@@ -280,21 +280,21 @@
         </div>
         <div class="com__row">
           <div class="com__textarea">
-            <label class="label">Описание</label>
-            <textarea class="textarea" id="" cols="30" rows="10"></textarea>
+            <label class="sg-label">Описание</label>
+            <textarea class="sg-textarea" id="" cols="30" rows="10"></textarea>
           </div>
         </div>
         <div class="com__row">
           <div class="com__textarea">
-            <label class="label">Описание</label>
-            <textarea class="textarea textarea--required" id="" cols="30" rows="10"></textarea>
+            <label class="sg-label">Описание</label>
+            <textarea class="sg-textarea sg-textarea--required" id="" cols="30" rows="10"></textarea>
           </div>
         </div>
         <div class="bot-btn">
-          <button class="btn">Сохранить</button>
-          <button class="btn btn--noactive">Отмена</button>
-          <button class="btn btn--noactive">Снять с публикации</button>
-          <button class="btn">Опубликовать</button>
+          <button class="sg-btn">Сохранить</button>
+          <button class="sg-btn sg-btn--noactive">Отмена</button>
+          <button class="sg-btn sg-btn--noactive">Снять с публикации</button>
+          <button class="sg-btn">Опубликовать</button>
         </div>
       </div>
         </div>

@@ -1,6 +1,6 @@
 @import '../variables';
 
-.breadcrumbs {
+.sg-breadcrumbs {
   background-color: $navBackground;
   font-weight: 700;
   font-size: 15px;
@@ -10,7 +10,7 @@
   margin-top: 2px;
 }
 
-.breadcrumbs__container {
+.sg-breadcrumbs__container {
   max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -18,25 +18,25 @@
   display: flex;
 }
 
-.breadcrumbs__logo {
+.sg-breadcrumbs__logo {
   display: flex;
   align-items: center;
   padding: 0 px;
   cursor: pointer;
 }
 
-.breadcrumbs__crumb img {
+.sg-breadcrumbs__crumb img {
   height: 50px;
 }
 
-.breadcrumbs__item {
+.sg-breadcrumbs__item {
   display: flex;
   align-items: center;
   padding: 0 10px;
   cursor: pointer;
 }
 
-.breadcrumbs__link {
+.sg-breadcrumbs__link {
   text-decoration: none;
   color: $navFont;
 
@@ -47,7 +47,7 @@
 
 @media (max-width: 576px) {
 
-  .breadcrumbs {
+  .sg-breadcrumbs {
     display: none;
   }
 

@@ -1,13 +1,13 @@
 @import "../variables";
 
-.paginator {
+.sg-paginator {
   margin-left: auto;
   display: flex;
   justify-content: flex-end;
   margin-top: 0px;
 }
 
-.paginator__item {
+.sg-paginator__item {
   height: 30px;
   width: 45px;
   display: flex;
@@ -35,12 +35,12 @@
   }
 }
 
-.paginator__item--hidden {
+.sg-paginator__item--hidden {
   background-color: $pagBackgroundHidden;
   border: 1px solid $pagBorderHidden;
 }
 
-.paginator__item--active {
+.sg-paginator__item--active {
   background-color: $pagBackgroundActive;
   color: $white;
   border: 1px solid $pagBorderActive;

@@ -1,6 +1,6 @@
 @import "../variables";
 
-.tabs {
+.sg-tabs {
   display: flex;
   list-style-type: none;
   padding-left: 0;
@@ -8,7 +8,7 @@
   border-bottom: 1px solid $tabsBorder;
 }
 
-.ui-tabs {
+.sg-ui-tabs {
   display: block;
   padding-bottom: 10px;
   padding-right: 10px;
@@ -37,7 +37,7 @@
   }
 }
 
-.tabs__link {
+.sg-tabs__link {
   font-weight: 700;
   text-decoration: none;
   color: inherit;
