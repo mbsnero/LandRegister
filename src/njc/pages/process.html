@@ -1,0 +1,203 @@
+{# Переменные #}
+{% set title = "Госуслуги" %}
+{% set navItems = [
+{
+"title"  : "Процесс",
+"url" : "process.html",
+"active": true
+}
+]
+%}
+{# Наследование шаблона #}
+{% extends "src/njc/layout.njc" %}
+
+{# Вставляем контент шаблонов #}
+{% block content %}
+
+<nav class="sg-menu sg-js-menu sg-js-menu--activated">
+  <div class="sg-menu__container">
+    <div class="sg-menu__select-box">
+      <select id="select_profile" class="sg-menu__select sg-select" name="state">
+        <option></option>
+        <option value="value_1">Профиль 1</option>
+        <option value="value_2">Профиль 2</option>
+      </select>
+    </div>
+    <button class="sg-button sg-hamburger" type="button">
+      <span class="sg-hamburger__label">Открыть меню</span>
+    </button>
+  </div>
+  <a href="#" class="sg-menu__item">
+    <div class="sg-menu__item-img">
+      <img src="images/reestr.svg" alt="">
+    </div>
+    <div>
+      <p class="sg-menu__link" href="#">Реестр земельных <br> участков</p>
+    </div>
+  </a>
+  <a href="#" class="sg-menu__item">
+    <div class="sg-menu__item-img">
+      <img src="images/process.svg" alt="">
+    </div>
+    <div>
+      <p class="sg-menu__link" href="#">Процесс</p>
+    </div>
+  </a>
+  <a href="#" class="sg-menu__item">
+    <div class="sg-menu__item-img">
+      <img src="images/otchet.svg" alt="">
+    </div>
+    <div>
+      <p class="sg-menu__link" href="#">Отчётность</p>
+    </div>
+  </a>
+</nav>
+
+<section class="sg-main-container">
+  <section class="main-block sg-process">
+    <div class="sg-page-title">
+      <h1 class="sg-title-text">
+        Реестр земельных участков
+      </h1>
+    </div>
+
+    <div class="sg-form">
+      <div class="sg-form__item sg-form__item--small">
+        <label class="sg-label" for="">Номер в процессе</label>
+        <input class="sg-input" type="text">
+      </div>
+      <div class="sg-form__item sg-form__item--small">
+        <label class="sg-label-select">
+          <span class="sg-label-select__hint">Статус</span>
+          <select class="sg-menu__select sg-select" name="status">
+            <option></option>
+            <option value="status_1">Статус 1</option>
+            <option value="status_2">Статус 2</option>
+          </select>
+        </label>
+      </div>
+      <div class="sg-form__item sg-form__item--small">
+        <label class="sg-label-select">
+          <span class="sg-label-select__hint">Этап процесса</span>
+          <select class="sg-menu__select sg-select" name="status">
+            <option></option>
+            <option value="status_1">Статус 1</option>
+            <option value="status_2">Статус 2</option>
+          </select>
+        </label>
+      </div>
+      <div class="sg-form__item sg-form__item--long sg-form__item--check">
+        <label class="toggle toggle--checkbox">
+          <input class="toggle__input" name="in-work" type="checkbox">
+          <span class="toggle__label">Новый</span>
+        </label>
+      </div>
+      <p class="sg-hint">Получатель:</p>
+      <div class="sg-form__item sg-form__item--small">
+        <label class="sg-label" for="">Фамилия</label>
+        <input class="sg-input" type="text">
+      </div>
+      <div class="sg-form__item sg-form__item--small">
+        <label class="sg-label" for="">Имя</label>
+        <input class="sg-input" type="text">
+      </div>
+      <div class="sg-form__item sg-form__item--small">
+        <label class="sg-label" for="">Отчество</label>
+        <input class="sg-input" type="text">
+      </div>
+      <div class="sg-form__item sg-form__item--long sg-form__item--double">
+        <label class="sg-label" for="">Паспорт</label>
+        <input class="sg-input" type="text" placeholder="Серия">
+        <input class="sg-input" type="text" placeholder="Номер">
+      </div>
+      <p class="sg-hint">Услуга:</p>
+      <div class="sg-form__item sg-form__item--max">
+        <label class="sg-label-select">
+          <span class="sg-label-select__hint">Наименование услуги</span>
+          <select class="sg-menu__select sg-select" name="status">
+            <option></option>
+            <option value="status_1">Услуга 1</option>
+            <option value="status_2">Услуга 2</option>
+          </select>
+        </label>
+      </div>
+      <div class="sg-form__item sg-form__item--long">
+        <label class="sg-label-select">
+          <span class="sg-label-select__hint">Этап услуги</span>
+          <select class="sg-menu__select sg-select" name="status">
+            <option></option>
+            <option value="status_1">Этап 1</option>
+            <option value="status_2">Этап 2</option>
+          </select>
+        </label>
+      </div>
+      <p class="sg-hint">Земельный участок:</p>
+      <div class="sg-form__item sg-form__item--small">
+        <label class="sg-label" for="">Кадастровый номер</label>
+        <input class="sg-input" type="text">
+      </div>
+      <div class="sg-form__item sg-form__item--long">
+        <label class="sg-label" for="">Разрешенное использование Минэконом</label>
+        <input class="sg-input" type="text">
+      </div>
+      <div class="sg-form__item sg-form__item--long">
+        <label class="sg-label" for="">Разрешенное использование Росреестр</label>
+        <input class="sg-input" type="text">
+      </div>
+    </div>
+    <div class="sg-form-2">
+      <div class="sg-form__item sg-form__item--small">
+        <label class="sg-label-select">
+          <span class="sg-label-select__hint">Категория земли</span>
+          <select class="sg-menu__select sg-select" name="status">
+            <option></option>
+            <option value="status_1">Категория 1</option>
+            <option value="status_2">Категория 2</option>
+          </select>
+        </label>
+      </div>
+      <div class="sg-form__item sg-form__item--long ">
+        <label class="sg-label" for="">Адресс</label>
+        <input class="sg-input" type="text">
+      </div>
+    </div>
+
+    <div class="sg-btn-block">
+      <div class="sg-left-block">
+        <button class="sg-btn">Принять</button>
+        <button class="sg-btn">Сбросить</button>
+      </div>
+      <div class="sg-paginator">
+        <div class="sg-paginator__item sg-paginator__item--active">
+          <p>1</p>
+        </div>
+        <div class="sg-paginator__item">
+          <p>2</p>
+        </div>
+        <div class="sg-paginator__item">
+          <p>3</p>
+        </div>
+        <div class="sg-paginator__item">
+          <p>4</p>
+        </div>
+        <div class="sg-paginator__item sg-paginator__item--hidden">
+          <p>...</p>
+        </div>
+        <div class="sg-paginator__item">
+          <p>10</p>
+        </div>
+        <div class="sg-paginator__item">
+          <p>11</p>
+        </div>
+        <div class="sg-paginator__item">
+          <p>12</p>
+        </div>
+      </div>
+    </div>
+
+    <img src="images/table-img.png" alt="" class="img-mok">
+
+  </section>
+</section>
+
+{% endblock %}
