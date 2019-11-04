@@ -61,10 +61,10 @@ gulp.task('layout', function () {
 });
 
 gulp.task('js-build', function () {
-	gulp.src('src/js/c*.js')
-        .pipe(rigger())
-        .pipe(uglify())
-		.pipe(gulp.dest('build/js'))
+	gulp.src('src/js/common.js')
+				.pipe(rigger())
+				// .pipe(uglify())
+				.pipe(gulp.dest('build/js'))
         .pipe(server.reload({stream:true}))
 
 });

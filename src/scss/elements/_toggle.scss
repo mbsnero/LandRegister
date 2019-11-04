@@ -3,6 +3,7 @@
 .toggle {
   display: flex;
   min-height: 15px;
+  align-items: flex-start;
 
   &:hover,
   &:focus {
@@ -58,6 +59,26 @@
 .toggle--checkbox .toggle__input:checked + .toggle__label:before {
   background-color: $btn;
   border-color: $btn;
+}
+
+.toggle--radio {
+  .toggle__label:before {
+    border-radius: 50%;
+    border-color: $btn; 
+  }
+}
+
+.toggle--radio .toggle__input:checked + .toggle__label:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: $btn; 
+  z-index: 2;
+  transform: translateY(-50%) rotate(-45deg);
 }
 
 .toggle__label:before {

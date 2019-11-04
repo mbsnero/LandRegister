@@ -1,0 +1,16 @@
+@import '../variables';
+
+.sg-main {
+  margin-left: 30px;
+  box-sizing: border-box;
+  width: 80%;
+  flex-grow: 1;
+}
+
+.sg-main__item {
+  width: 30%;
+}
+
+.sg-main__choice {
+  margin-top: 14px;
+}

@@ -1,6 +1,11 @@
 @import "../../node_modules/select2/dist/css/select2.min";
+@import "../../node_modules/tiny-slider/dist/tiny-slider";
+@import "../../node_modules/tippy.js//dist/tippy";
+@import "../../node_modules/tippy.js/themes/light";
 @import "base";
 @import "elements/link";
+@import "elements/tooltip";
+@import "elements/topSlider";
 @import "elements/main";
 @import "elements/header";
 @import "elements/footer";

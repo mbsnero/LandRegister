@@ -6,43 +6,103 @@
 
 {# Вставляем контент шаблонов #}
 {% block content %}
-<nav class="sg-menu js-menu js-menu--activated">
-  <div class="menu__container">
-    <div class="menu__select-box">
+<nav class="sg-menu sg-js-menu sg-js-menu--activated">
+  <div class="sg-menu__container">
+    <div class="sg-menu__select-box">
       <select id="select_profile" class="sg-menu__select sg-select" name="state">
         <option></option>
         <option value="value_1">Профиль 1</option>
         <option value="value_2">Профиль 2</option>
       </select>
     </div>
-    <button class="button hamburger" type="button">
-      <span class="hamburger__label">Открыть меню</span>
+    <button class="sg-button sg-hamburger" type="button">
+      <span class="sg-hamburger__label">Открыть меню</span>
     </button>
   </div>
-  <div class="sg-menu__item">
+  <a href="#" class="sg-menu__item">
     <div class="sg-menu__item-img">
       <img src="images/reestr.svg" alt="">
     </div>
     <div>
-      <a class="sg-menu__link" href="#">Реестр земельных <br> участков</a>
+      <p class="sg-menu__link" href="#">Реестр земельных <br> участков</p>
     </div>
-  </div>
-  <div class="sg-menu__item">
+  </a>
+  <a href="#" class="sg-menu__item">
     <div class="sg-menu__item-img">
       <img src="images/process.svg" alt="">
     </div>
     <div>
-      <a class="sg-menu__link" href="#">Процесс</a>
+      <p class="sg-menu__link" href="#">Процесс</p>
     </div>
-  </div>
-  <div class="sg-menu__item">
+  </a>
+  <a href="#" class="sg-menu__item">
     <div class="sg-menu__item-img">
       <img src="images/otchet.svg" alt="">
     </div>
     <div>
-      <a class="sg-menu__link" href="#">Отчётность</a>
+      <p class="sg-menu__link" href="#">Отчётность</p>
     </div>
-  </div>
+  </a>
 </nav>
+<main class="sg-main">
+<div class="sg-main__slider">
+  <div class="sg-slideshow-container">
+    <div id="mainSlider" class="">
+      <div>
+        <a href="#">
+          <img src="https://placeimg.com/460/306/tech/sepia" alt="">
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img class="lazy" src="https://placeimg.com/460/306/animals" alt="">
+        </a>
+      </div>
+        <div>
+        <a href="#">
+          <img class="lazy" src="https://placeimg.com/460/306/tech" alt="">
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img class="lazy" src="https://placeimg.com/460/306/people" alt="">
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img class="lazy" src="https://placeimg.com/460/306/arch" alt="">
+        </a>
+      </div>
+    </div> 
+  </div>
+</div>
+<div class="sg-main__content">
+  <section class="sg-main__services">
+  <div class="sg-title-block">
+    <p class="sg-title-block__text">Выбор муниципальной услуги:</p>
+    <img class="sg-title-block__btn" src="images/accordion_arr_up_hov.svg" alt="">
+  </div>
+  <div>
+    <label class="sg-main__choice toggle toggle--radio">
+      <input class="toggle__input" type="radio" name="service" checked="">
+      <span class="toggle__label">Продажа и предоставление в аренду земельных участков, находящихся в муниципальной собственности, на торгах</span>
+      <button class="tooltip" data-tippy-content="Tooltip">i</button>
+    </label>
+    <label class="sg-main__choice toggle toggle--radio">
+      <input class="toggle__input" type="radio" name="service">
+      <span class="toggle__label">Предоставление земельных участков, находящихся в муниципальной собственности, без проведения торгов, в собственность, аренду, безвозмездное пользование</span>
+    </label>
+    <label class="sg-main__choice toggle toggle--radio">
+      <input class="toggle__input" type="radio" name="service">
+      <span class="toggle__label">Предоставление земельного участка, находящегося в муниципальной собственности в собственность бесплатно для многодетных семей</span>
+    </label>
+    <label class=" sg-main__choice toggle toggle--radio">
+      <input class="toggle__input" type="radio" name="service">
+      <span class="toggle__label">Предоставление земельного участка, находящегося в муниципальной собственности, в постоянное (бессрочное) пользование</span>
+    </label>
+  </div>
+  </section>
+</div>
+</main>
   
 {% endblock %}

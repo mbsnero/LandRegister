@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.js-menu').find('.hamburger').on('click', function() {
-      $('.js-menu').toggleClass('js-menu--activated');
+    $('.sg-js-menu').find('.sg-hamburger').on('click', function() {
+      $('.sg-js-menu').toggleClass('sg-js-menu--activated');
     });
 });

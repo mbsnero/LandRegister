@@ -1,64 +1,59 @@
 @import "../variables";
-
-.sg-menu {
-  width: 100px;
-  overflow-x: hidden;
-  font-family: 'Helvetica';
-  transition: width .4s, visibility .4s;
-}
-
-.menu__container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu__select-box {
-  width: 90%;
-}
-
-.sg-menu__select {
-  font-size: 15px;
-  font-weight: 500;
-  color: $black;
-  width: 100%;
-}
-
-.sg-menu__item {
-  display: block;
-  margin: 20px;
-  margin-left: 0;
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-}
-
-.sg-menu__item-img {
-  min-width: 40px;
-  margin-right: 20px;
-}
-
-.sg-menu__link {
-  visibility: hidden;
-}
-
-@media (max-width: 992px) {
-
-}
-
-@media (max-width: 768px) {
-  .sg-menu {
-    min-width: 100%;
+.sg-{
+  &menu {
+    width: 100px;
+    overflow-x: hidden;
+    font-family: "Helvetica";
+    transition: width 0.4s, visibility 0.4s;
   }
 
-  .menu__select-box {
+  &menu__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &menu__select-box {
+    width: 90%;
+  }
+
+  &menu__select {
+    font-size: 15px;
+    font-weight: 500;
+    color: $black;
     width: 100%;
   }
 
-  .hamburger {
-    display: none;
+  &menu__item {
+    margin: 20px;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
   }
-}
 
-@media (max-width: 576px) {
+  &menu__item-img {
+    min-width: 40px;
+    margin-right: 20px;
+  }
 
+  &menu__link {
+    visibility: hidden;
+  }
+
+  @media (max-width: 992px) {
+  }
+
+  @media (max-width: 768px) {
+    &menu {
+      min-width: 100%;
+    }
+
+    &menu__select-box {
+      width: 100%;
+    }
+
+    &hamburger {
+      display: none;
+    }
+  }
 }
