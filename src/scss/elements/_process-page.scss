@@ -1,0 +1,44 @@
+@import "../variables";
+
+.sg-process {
+  .sg-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .sg-hint {
+      width: 100%;
+      margin-top: 0;
+    }
+
+    .sg-form__item {
+      position: relative;
+      margin-bottom: 15px;
+    }
+
+    .sg-form__item--small {
+      width: 18%;
+    }
+
+    .sg-form__item--long {
+      width: 38%;
+    }
+
+    .sg-form__item--max {
+      width: 59.5%;
+    }
+
+    .sg-form__item--double {
+      display: flex;
+    }
+
+    .sg-form__item--check {
+      box-sizing: border-box;
+      padding: 16px 20px;
+    }
+  }
+
+  .sg-form-2 {
+
+  }
+}
