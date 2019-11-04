@@ -33,6 +33,7 @@
     "jquery-ui-dist": "^1.12.1",
     "nunjucks": "^3.2.0",
     "select2": "^4.0.11",
-    "tiny-slider": "^2.9.2"
+    "tiny-slider": "^2.9.2",
+    "tippy.js": "^5.1.1"
   }
 }
