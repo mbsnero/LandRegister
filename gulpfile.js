@@ -64,7 +64,7 @@ gulp.task('js-build', function () {
 	gulp.src('src/js/c*.js')
 				.pipe(rigger())
 				.pipe(sourcemaps.init()) 
-				.pipe(uglify())
+				// .pipe(uglify())
 				.pipe(sourcemaps.write()) 
 		.pipe(gulp.dest('build/js'))
         .pipe(server.reload({stream:true}))
