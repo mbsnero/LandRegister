@@ -21,7 +21,7 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-svg-sprites": "^4.1.2",
     "gulp-svgmin": "^1.2.4",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "jquery.countdown": "^1.2.8",
     "run-sequence": "^2.2.1"
   },
